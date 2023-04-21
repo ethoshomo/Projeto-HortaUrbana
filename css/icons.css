@@ -1,0 +1,7 @@
+/* Distancia os icones do texto */
+i[class="bi bi-house"], i[class="bi bi-box-arrow-in-right"], 
+i[class="bi bi-person-fill"], i[class="bi bi-instagram"], 
+i[class="bi bi-facebook"], i[class="bi bi-geo-alt-fill"],
+i[class="bi bi-whatsapp"], i[class="bi bi-envelope"] {
+    margin: 7px;
+}

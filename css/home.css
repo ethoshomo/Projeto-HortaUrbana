@@ -1,0 +1,30 @@
+#home {
+    height: 650px;
+    width: 100%;
+    top: 60px;
+    text-align: center;
+}
+
+#home-img {
+    margin-top: 90px;
+}
+
+#home h1 {
+    margin: 20px;
+    font-size: 60px;
+}
+
+#home h1 span {
+    color: var(--lightOrange);
+}
+
+#home p {
+    font-size: 20px;
+}
+
+/* Adpta para a tela menor */
+@media (max-width: 858px) {
+    #home {
+        height: 800px;
+    }
+}

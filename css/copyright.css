@@ -1,0 +1,22 @@
+/* Configura a parte inferior */
+#copyright {
+    background-color: var(--darkGreen);
+    text-align: center;
+    height: 20px;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Configura o texto desta parte */
+#copyright-text {
+    color: var(--lightBrown);
+    font-size: 10px;
+    font-weight: bold;
+}
+
+@media (max-width: 858px) {
+    #copyright {
+        bottom: 0px;
+        position: relative;
+    }
+}

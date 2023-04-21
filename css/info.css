@@ -1,0 +1,84 @@
+/* Informações de contados e suas configurações */
+#info {
+    background-color: var(--lightBrown);
+    color: var(--darkGreen);
+    height: 300px;
+    width: 100%;
+    bottom: 20px;
+    display: flex;
+}
+
+/* Configurações do texto */
+#info h4 {
+    font-size: 25px;
+    text-decoration: underline;
+    margin: 5px 0px 0px 7px;
+}
+
+#info p {
+    margin: 14px 0px 0px 7px;
+}
+
+/* 
+Por causa do ajuste para telas de smarthphones
+houve a necessidade de separrar os elementos.
+Assim, não podendo utilizar classes.
+*/
+#sobre-nos {
+    width: 25%;
+    margin: 2%;
+}
+
+#siga-nos {
+    width: 25%;
+    margin: 2%;
+}
+
+#informacoes {
+    width: 25%;
+    margin: 2%;
+}
+
+#politicas {
+    width: 25%;
+    margin: 2%;
+}
+
+/* Adpta para a tela menor */
+@media (max-width: 858px) {
+    #info {
+        position: relative;
+        height: 430px;
+        bottom: 0px;
+    }
+
+    #sobre-nos {
+        width: 50%;
+        height: 50%;
+        position: relative;
+    }
+    
+    #siga-nos {
+        position: absolute;
+        width: 50%;
+        height: 50%;
+        right: 0px;
+        top: 0px;
+    }
+
+    #informacoes {
+        position: absolute;
+        width: 45%;
+        height: 70%;
+        bottom: 0px;
+    }
+
+    #politicas {
+        position: absolute;
+        /* width: 25%; */
+        width: 50%;
+        height: 70%;
+        right: 0px;
+        bottom: 0px;
+    }
+}

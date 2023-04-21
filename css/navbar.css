@@ -1,0 +1,128 @@
+/* Define a estrutura da nabar */
+#navbar {
+    position: fixed;
+    background: var(--darkGreen);
+    height: 60px;
+    width: 100%;
+}
+
+/* Imagem sempre alinha a esquerda */
+#logo {
+    float: left;
+}
+
+/* Move a lista para direita */
+#opcoes {
+    float: right;
+    margin-right: 80px;
+}
+
+/* Transforma a lista em linha */
+.nav-lista {
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 5px;
+}
+
+/* Configura as opções */
+.nav-icon {
+    color: var(--lightBrown);
+    font-size: 20px;
+    padding: 10px 5px;
+    border-radius: 5px;
+}
+
+/* Efeitos nas opções*/
+.nav-icon.active, .nav-icon:hover {
+    background-color: var(--lightGreen);
+    transition: .5s;
+}
+
+/* Configuração do botão */
+.checkbtn {
+    font-size: 30px;
+    color: var(--lightBrown);
+    float: right;
+    line-height: 60px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none; 
+}
+
+/* Tira o efeito de ckeckbox */
+#check {
+    display: none;
+}
+
+/* Resolução da parte menor */
+@media (max-width: 952px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    .nav-icon {
+        font-size: 16px;
+    }
+}
+
+/* Resolução de smartphone */
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+
+    #opcoes {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: var(--darkGreen);
+        top: 60px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    .nav-lista {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    .nav-icon {
+        font-size: 20px;
+    }
+
+    .nav-icon:active, .nav-icon:hover {
+        background-color: none;
+        color: var(--lightBrown)
+    }
+
+    #check:checked ~ #opcoes {
+        left: 0;
+    }
+}
+
+/* Título Principal */
+#title1 {
+    position: absolute;
+    top: 5px;
+    left: 130px;
+    font-family: 'Russo One', 'Russo';
+    font-weight: bold;
+    color: var(--lightOrange);
+    font-size: 35px;
+    z-index: 100;
+}
+
+/* Subtitulo */
+#title2 {
+    position: absolute;
+    top: 30px;
+    left: 212px;
+    font-family: 'Peddana';
+    font-weight: none;
+    color: var(--lightBrown);
+    font-size: 20px;
+    z-index: 50;
+}
