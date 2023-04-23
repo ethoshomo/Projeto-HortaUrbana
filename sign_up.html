@@ -9,7 +9,7 @@
 
         <link rel="stylesheet" href="css/root.css">
         <link rel="stylesheet" href="css/navbar.css">
-        <link rel="stylesheet" href="css/home.css">
+        <link rel="stylesheet" href="css/autentication.css">
         <link rel="stylesheet" href="css/info.css">
         <link rel="stylesheet" href="css/copyright.css">
         <link rel="stylesheet" href="css/icons.css">
@@ -43,11 +43,40 @@
 
         <!---------------------------------------------------CONTEUDO------------------------------------------------------------------>
         
-        <div id="home">
-            <img id="home-img" src="img/revolucao-dos-tomateiros.jpg">
-            <h1>Seja <span>bem vindo a</span> _HortaUrbana</h1>
-            <p>Para ver a lista de ofertas, favor realizar a <a href="login.html">autenticação</a> no site!</p>
-        </div>
+        <div class="pageCenter">
+            <h1>Autenticação</h1>
+            <p>Faça já a sua conta para usufruir dos benefícios do site! 
+                Caso já tenha uma, basta fazer o seu <a href="login.html">login</a>!!</p>
+            <form>
+                
+                <div class="formSection" id="PersonalData">
+                    <label for="PersonalData">Dados Pessoais</label>
+                    <input type="text" name="name" placeholder="Nome">
+                </div>
+
+                <div class="formSection" id="AdressData">
+                    <label for="AdressData">Endereço</label>
+                    <input type="text" name="rua"  placeholder="Rua">
+                    <input type="text" name="bairro" placeholder="Bairro">
+                    <input type="text" name="cidade"  placeholder="Cidade">
+                    <input type="text" name="estado"  placeholder="Estado">
+                </div>
+
+                <div class="formSection" id="PhoneData">
+                    <label for="PhoneData">Telefone</label>
+                    <input type="tel" name="phone" placeholder="(xx) xxxxx-xxxx">
+                </div>
+
+                <div class="formSection" id="AccessData">
+                    <label for="PhoneData">Dados de Acesso</label>
+                    <input type="email" name="email" placeholder="name@example.com">
+                    <input type="password" name="password"  placeholder="Senha">
+                    <input type="password" name="passwordConfirmed"  placeholder="Confirme a Senha">
+                </div>
+
+                <button>CADASTRAR</button>
+            </form>
+        </div> 
 
         <!---------------------------------------------------INFORMACAO------------------------------------------------------------------>
 
