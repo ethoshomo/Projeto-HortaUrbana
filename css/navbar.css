@@ -12,20 +12,20 @@
 }
 
 /* Move a lista para direita */
-#navbar ul {
+#opcoes {
     float: right;
     margin-right: 80px;
 }
 
 /* Transforma a lista em linha */
-#navbar ul li {
+.nav-lista {
     display: inline-block;
     line-height: 60px;
     margin: 0 5px;
 }
 
 /* Configura as opções */
-#navbar ul li a {
+.nav-icon {
     color: var(--lightBrown);
     font-size: 20px;
     padding: 10px 5px;
@@ -33,7 +33,7 @@
 }
 
 /* Efeitos nas opções*/
-#navbar ul li a.active, #navbar ul li a:hover {
+.nav-icon.active, .nav-icon:hover {
     background-color: var(--lightGreen);
     transition: .5s;
 }
@@ -61,7 +61,7 @@
         padding-left: 50px;
     }
 
-    #navbar ul li a {
+    .nav-icon {
         font-size: 16px;
     }
 }
@@ -72,7 +72,7 @@
         display: block;
     }
 
-    #navbar ul {
+    #opcoes {
         position: fixed;
         width: 100%;
         height: 100vh;
@@ -83,17 +83,17 @@
         transition: all .5s;
     }
 
-    #navbar ul li {
+    .nav-lista {
         display: block;
         margin: 50px 0;
         line-height: 30px;
     }
 
-    #navbar ul li a {
+    .nav-icon {
         font-size: 20px;
     }
 
-    #navbar ul li a:active, #navbar ul li a:hover {
+    .nav-icon:active, .nav-icon:hover {
         background-color: none;
         color: var(--lightBrown)
     }
