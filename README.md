@@ -19,7 +19,7 @@ Pedro Guilherme dos Reis Teixeira (12542477)
 
 ## 2. **Descrição do Projeto**
 
-<img src="img/DiagramaSite.png">
+<img src="img/diagrama.png">
 
 ## 3. **Comentários Sobre o Código**
 
