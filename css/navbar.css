@@ -26,7 +26,7 @@
 
 /* Configura as opções */
 #navbar ul li a {
-    color: var(--lightBrown);
+    color: var(--white);
     font-size: 20px;
     padding: 10px 5px;
     border-radius: 5px;
