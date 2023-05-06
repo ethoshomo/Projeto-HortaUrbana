@@ -10,9 +10,10 @@ Pedro Guilherme dos Reis Teixeira (12542477)
 ## 1. **Requisitos**
 
 * O sistema deve possuir 3 tipos de usuários:
+    * Os **administrador** são responsáveis por registrar/gerenciar produtores, clientes e serviços fornecidos. O aplicativo já vem com uma conta de adminstração.
     * Os **clientes** são usuários que acessam o sistema para comprar produtos/serviços. 
-    * Os **administrador** são responsáveis por registrar/gerenciar administradores, clientes e produtos/serviços fornecidos. O aplicativo já vem com uma conta de adminstração com senha admin.
-    * Os **produtores** são responsáveis por registrar/gerenciar os seus produtos dentro do *e-coommerce*. Os cargos de administradores adquiridos após uma avaliação do clientes e dado por via Super Adminstrador.
+    * Os **produtores** são responsáveis por registrar/gerenciar os seus produtos dentro do *e-coommerce*. Os cargos de produtores adquiridos após uma avaliação do cliente e dado por via Adminstrador.
+  
 * Os registros dos Clientes inclui: **nome completo**, **id**, **telefone**, **email** e **endereço**. 
 * Os registros dos serviços/produtos inclui: **nome**, **id**, **foto**, **descrição**, **preço**, **quantidade** (em estoque) e **quantidade vendida**.
 * A loja deve vender produtos.
