@@ -20,23 +20,23 @@ Pedro Guilherme dos Reis Teixeira (12542477)
 
 ## 2. **Descrição do Projeto**
 <a><img src="img_mk/diagrama.jpeg" s></a>
-Chamado Horta Urbana o nosso projeto busca agir como uma loja digital com um filosofia similar a sites como a Amazon e iFood, porém com o diferencial de se aplicar ao escopo especializado de produtos que um consumidor encontraria usualmente em uma feira fisíca, como vegetais e verduras. O próposito é que certos usuários possam obter a classificação de vendedores e oferecer seus diversos produtos, outros usuários (Que podem também ser outros vendedores) poderiam então selecionar os items que mais atraem sua atenção e os colocar no carrinho de compras. 
+Chamado Horta Urbana o nosso projeto busca agir como uma loja digital com um filosofia similar a sites como a Amazon e iFood, porém com o diferencial de se aplicar ao escopo especializado de produtos que um consumidor encontraria usualmente em uma feira fisíca, como vegetais e verduras. O próposito é que certos usuários(Clientes) possam obter a classificação de vendedor(Administrador) e oferecer seus diversos produtos, outros usuários (Que podem também ser outros Administradores) poderiam então selecionar os items que mais atraem sua atenção e os colocar no carrinho de compras. 
 
 ### 2.1 **Home**
 <a><img src="img_mk/home_pc.png"></a>
-Pão -> Descrição Específicas
+A primeira página que um indivíduo vê ao acessar o link do site, sua função principal e guiar usuários para as telas de cadastro e/ou login mas também permite o acesso direto do perfil de um usuário caso o mesmo ja esteja logado. Ela está desenvolvida em html e css.
 
 ### 2.2 **Login**
 <a><img src="img_mk/login_pc.png"></a>
-Pão -> Descrição Específicas
+Essa página primeiro apresenta que o cabeçalho e e rodapé vista na página "Home" será mantida como padrão em todas as outras. Ela apresenta um formulário simples onde são requisitados o e-mail e senha de um usuário ja cadastrado para que ele possa acessar o site em seu perfil. Ela está desenvolvida em html e css.
 
 ### 2.3 **Cadastro**
 <a><img src="img_mk/cadastro_pc.png"></a>
-Pão -> Descrição Específicas
+Apresenta o formulário de cadastro de um indivíduo, requisitando seu nome, endereço, telefone e informações de login. O endereço pode parecer não intuitivo como uma informação de cadastro porém assume-se que: Um usuário base (Cliente) necessitaria de tal informação para receber seus produtos por entrega, como todos os usuários que vendem produtos (Administradores) também são Clientes essa necessidade se extende a eles. Ela está desenvolvida em html e css.
 
 ### 2.4 **Lista de Produtos**
 <a><img src="img_mk/listaprodutos_pc.png"></a>
-Pão -> Descrição Específicas
+A página onde produtos são pesquisados e accesados, na imagem um exemplo base é usado para mostrar quais categorias de dados o produto apresentaria. A imagem apresenta a página da perspectiva de um Super Administrador que poderia deletar e editar quaisquer produtos no site, um Administrador pelo o outro lado poderia faze-lo apenas para seus próprios produtos enquanto um Cliente é capaz apenas de visualizar e acessar produtos.
 
 ### 2.5 **Profile**
 <a><img src="img_mk/profile_pc.png"></a>
