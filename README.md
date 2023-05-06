@@ -11,8 +11,8 @@ Pedro Guilherme dos Reis Teixeira (12542477)
 
 * O sistema deve possuir 3 tipos de usuários:
     * Os **clientes** são usuários que acessam o sistema para comprar produtos/serviços. 
-    * Os **Super Administradores** são responsáveis por registrar/gerenciar administradores, clientes e produtos/serviços fornecidos. O aplicativo já vem com uma conta de adminstração com senha admin.
-    * Os **Administradores** são responsáveis por registrar/gerenciar os seus produtos dentro do *e-coommerce*. Os cargos de administradores adquiridos após uma avaliação do clientes e dado por via Super Adminstrador.
+    * Os **administrador** são responsáveis por registrar/gerenciar administradores, clientes e produtos/serviços fornecidos. O aplicativo já vem com uma conta de adminstração com senha admin.
+    * Os **produtores** são responsáveis por registrar/gerenciar os seus produtos dentro do *e-coommerce*. Os cargos de administradores adquiridos após uma avaliação do clientes e dado por via Super Adminstrador.
 * Os registros dos Clientes inclui: **nome completo**, **id**, **telefone**, **email** e **endereço**. 
 * Os registros dos serviços/produtos inclui: **nome**, **id**, **foto**, **descrição**, **preço**, **quantidade** (em estoque) e **quantidade vendida**.
 * A loja deve vender produtos.
@@ -43,7 +43,7 @@ A página onde produtos são pesquisados e accesados, na imagem um exemplo base 
 Pão -> Descrição Específicas
 
 ### 2.6 **Carinho**
-<a><img src=""></a>
+<a><img src="img_mk/carrinho.jpg"></a>
 Pão -> Descrição Específicas
 
 ### 2.7 **CRUD de Produto**
@@ -51,7 +51,6 @@ Pão -> Descrição Específicas
 Pão -> Descrição Específicas
 
 ### 2.8 **Promoção de Consumidor à Produtor**
-<a><img src=""></a>
 Pão -> Descrição Específicas
 
 
