@@ -20,7 +20,7 @@ Pedro Guilherme dos Reis Teixeira (12542477)
 
 ## 2. **Descrição do Projeto**
 <a><img src="img_mk/diagrama.jpeg" s></a>
-Pão -> Descrição Geral
+Chamado Horta Urbana o nosso projeto busca agir como uma loja digital com um filosofia similar a sites como a Amazon e iFood, porém com o diferencial de se aplicar ao escopo especializado de produtos que um consumidor encontraria usualmente em uma feira fisíca, como vegetais e verduras. O próposito é que certos usuários possam obter a classificação de vendedores e oferecer seus diversos produtos, outros usuários (Que podem também ser outros vendedores) poderiam então selecionar os items que mais atraem sua atenção e os colocar no carrinho de compras. 
 
 ### 2.1 **Home**
 <a><img src="img_mk/home_pc.png"></a>
