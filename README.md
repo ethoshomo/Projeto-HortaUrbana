@@ -1,5 +1,5 @@
 
-# <img src="Mielstone1/img/fotor_2023-4-20_19_44_4.png" style="width: 20px;"> **Projeto-HortaUrbana**
+# <img src="Milestone1/img/fotor_2023-4-20_19_44_4.png" style="width: 20px;"> **Projeto-HortaUrbana**
 
 <div align="right">
 Carlos Filipe de Castro Lemos (12542630) <br>
