@@ -7,67 +7,113 @@ João Gabriel Sasseron Roberto Amorim (12542564) <br>
 Pedro Guilherme dos Reis Teixeira (12542477)
 </div>
 
-## 1. **Requisitos**
+## 1. **Requisitos: Pessoas e Papéis**
 
 * O sistema deve possuir 3 tipos de usuários:
-    * Os **Administradores** são responsáveis por registrar/gerenciar produtores, clientes e serviços fornecidos. O aplicativo já vem com uma conta de adminstração.
-    * Os **Clientes** são usuários que acessam o sistema para comprar produtos/serviços. 
-    * Os **Produtores** são responsáveis por registrar/gerenciar os seus produtos dentro do *e-commerce*. O cargo é adquirido adquirido após uma avaliação do Cliente e permissão por um Adminstrador.
-  
-* Os registros dos Clientes inclui: **nome completo**, **id**, **telefone**, **email** e **endereço**. 
-* Os registros dos serviços/produtos inclui: **nome**, **id**, **foto**, **descrição**, **preço**, **quantidade** (em estoque) e **quantidade vendida**.
-* A loja deve vender produtos.
-* Produtos vendidos: Os produtos são selecionados e sua quantidade escolhida é adicionada em um carrinho. Os produtos são comprados usando um número de cartão de cŕedito (qualquer número é aceito pelo sistema). A quantidade de produto vendido é subtraída da quantidade em estoque e adicionada à quantidade vendida. Carrinhos são esvaziados somente  após o pagamento ou pelos clientes.
 
-## 2. **Descrição do Projeto**
-Chamado Horta Urbana o nosso projeto busca agir como uma loja digital com um filosofia similar a sites como a Amazon e iFood, porém com o diferencial de se aplicar ao escopo especializado de produtos que um consumidor encontraria usualmente em uma feira fisíca, como vegetais e verduras. O próposito é que certos usuários(Clientes) possam obter a classificação de vendedor(Produtor) e oferecer seus diversos produtos, outros usuários (Que podem também ser outros Produtores) poderiam então selecionar os items que mais atraem sua atenção e os colocar no carrinho de compras.
+    * _**Administrador**_: trata-se de um perfil único que é um super usuário do sistema, afinal é responsável pelo gerenciamento de produtores, clientes e dos produtos do website. O aplicativo já vem com uma conta de administração (usuário: admin@admin.com e senha: 123456 - a qual ainda não foi implementada).
 
-<a><img src="img_mk/diagrama.jpeg" s></a>
+    * _**Clientes**_: são usuários que acessam o website para fazer compras de produtos. É necessário que realizem o cadastro no sistema para comprar produtos dos produtores. 
+
+    * _**Produtores**_: inicialmente se cadastram como consumidores e, após pedirem promoção ao administrador, são responsáveis pelo registro e gereciamento de seus produtos dentro do *e-commerce*.
+
+>_**<center>Observações</center>**_
+>* Os registros dos clientes devem incluir: **nome completo**, **id**, **telefone**, **email** e **endereço**. No banco de dados, iremos utilizar o **id** para fazer a diferenciação dos clientes. 
+>* Os registros dos produtos devem incluir: **nome**, **foto**, **descrição**, **preço**, **quantidade** (em estoque) e **quantidade vendida**. Da mesma forma que o cliente, o **id** irá ser utilizado no banco de dados para identificação do produto.
 
 
-### 2.1 **Home**
-A primeira página que um indivíduo vê ao acessar o link do site, sua função principal e guiar usuários para as telas de cadastro e/ou login mas também permite o acesso direto do perfil de um usuário caso o mesmo ja esteja logado. Ela está desenvolvida em HTML e CSS.
+## 2. **Requisitos: Descrição do Projeto**
 
-<a><img src="img_mk/home_pc.png"></a>
+Chamado `_Horta Urbana`, nosso projeto busca agir como uma loja digital com um filosofia similar a sites como a Amazon e iFood, porém com o diferencial de se aplicar ao escopo especializado de uma feira fisíca, como vegetais e verduras. 
 
-### 2.2 **Login**
-Essa página primeiro apresenta que o cabeçalho e e rodapé vista na página "Home" será mantida como padrão em todas as outras. Ela apresenta um formulário simples onde são requisitados o e-mail e senha de um usuário ja cadastrado para que ele possa acessar o site em seu perfil. Ela está desenvolvida em HTML e CSS.
+De forma resumida, poderíamos descrever o fluxo da experiência em três frentes, cujas funcionalidades mais comuns são:
 
-<a><img src="img_mk/login_pc.png"></a>
+* A loja irá disponibilizar um espaço comercial, do tipo marketplace, de modo que os produtores de frutas e verduras possam vender seus produtos.
+
+* Os produtores, com a autorização do administrador, terão a possibilidade de fazer o cadastro de seus produtos no sistema e gerenciar dados dos produtos.
+
+* Os clientes, durante a operação de compra, selecionarão os produtos e a quantidade. Ao clicarem no botão comprar, o produto e a sua quantidade serão adicionados a um carrinho de compras. 
+
+* Depois que todos os produtos forem selecionados, o cliente deverá finalizar a compra no carrinho. Nessa finalização da compra, o cliente deverá fornecer um número de cartão de crédito ou débito (qualquer número é aceito pelo sistema). 
+
+>_**<center>Observações</center>**_
+> * A quantidade de produto vendido será subtraída da quantidade em estoque e adicionada à quantidade vendida. 
+> * Os carrinhos são esvaziados somente após o pagamento ou pela intervenção direta do produtor ou do administrador.
+
+<center><img src="img_mk/diagrama.jpeg" width="500px" border='1'></center>
 
 
-### 2.3 **Cadastro**
-Apresenta o formulário de cadastro de um indivíduo, requisitando seu nome, endereço, telefone e informações de login. O endereço pode parecer não intuitivo como uma informação de cadastro porém assume-se que: Um usuário base (Cliente) necessitaria de tal informação para receber seus produtos por entrega, como todos os usuários que vendem produtos (Produtores) também são Clientes essa necessidade se extende a eles. Ela está desenvolvida em HTML e CSS.
+### 2.1 **Página Home**
 
-<a><img src="img_mk/cadastro_pc.png"></a>
+Trata-se da primeira página que o usuário vê ao acessar o domínio do site. Essa página traz um layout composto de três partes: 
 
+1) Header: o cabeçalho é constituído da barra de navegação, onde o usuário poderá fazer acesso à home, a lista de produtos ofertados, à autenticação no sistema e ao carrinho e de compras.
+
+2) Outlet: trata-se do espaço destinado ao conteúdo do website.
+
+3) Footer: trata-se do rodapé da página, onde o usuário poderá consultar informações de contato, políticas de funcionamento e outros.
+
+A estrutura apresentada na página home será mantida em todas as demais páginas. Destaque-se que sua principal funcionalidade é receber bem o usuário para que ele possa iniciar uma jornada de compras. 
+
+Nesse contexto, cogitou-se de disponibilizar um login automático no sistema. Porém, haverá necessidade de se estudar a viabilidade de fazer essa funcionalidade. Por enquanto, a página inicial está desenvolvida em HTML e CSS.
+
+<center><img src="img_mk/home_pc.png" width="500px" border='1'></center>
+
+### 2.2 **Página de Cadastro de Clientes**
+
+Apresenta o formulário de cadastro. 
+
+Aproveita-se a oportunidade para esclarecer que todos os usuários do website precisarão realizar o cadastro de clientes. Até mesmo os produtores precisam passar por esta etapa. Essa exigência é imposta para que o sistema de compras será preservado. 
+
+Além disso, convém mencionar que são coletados dados como nome, endereço e telefone para que os produtos comprados possam ser entregues, porém também são coletadas informações de login (email e senha). 
+
+Por fim, é de se esclarecer que a página está desenvolvida provisoriamente em HTML e CSS, bem como que o formulário ainda não está operacional.
+
+<center><img src="img_mk/cadastro_pc.png" width="500px" border='1'></center>
+
+### 2.3 **Página de Login**
+
+A página de login apresenta um formulário simples onde são requisitados o e-mail e senha de um usuário ja cadastrado. Por meio dessa tela, o administrador, os produtores e os clientes podem acessar seus perfis. Ela está desenvolvida em HTML e CSS.
+
+<center><img src="img_mk/login_pc.png" width="500px" border='1'></center>
 
 ### 2.4 **Lista de Produtos**
-A página onde produtos são pesquisados e accesados, na imagem um exemplo base é usado para mostrar quais categorias de dados o produto apresentaria. A imagem apresenta a página da perspectiva de um Administrador que poderia deletar e editar quaisquer produtos no site, um Produtor pelo o outro lado poderia faze-lo apenas para seus próprios produtos enquanto um Cliente é capaz apenas de visualizar e acessar produtos.
+Trata-se da página onde é exibida uma lista de produtos que poderão ser pesquisados e accesados. 
 
-<a><img src="img_mk/listaprodutos_pc.png"></a>
+Na imagem abaixo, apresenta-se a página sob a perspectiva do administrador o qual pode deletar e editar quaisquer produtos no site. Caso fosse acessada por um produtor, existiria apenas a possibilidade de alteração e deleção dos próprios produtos. Por fim, caso fosse acessada pelo cliente, este seria capaz apenas de visualizar, acessar e comprar produtos.
+
+<center><img src="img_mk/listaprodutos_pc.png" width="500px" border='1'></center>
 
 
 ### 2.5 **Profile**
-Uma pequena página de atalhos que permitem acesso rapido a várias areas do site, ela é divida em 3 sessões: A primeira apresenta conteúdos gerais que todos os usuários tem acesso; A segunda adiciona utilidades para Produtores que permitem o cadastro de um produto e a visualização de todos os seus produtos cadastrados; A terceira adiciona utilidades únicas para os usuários que possuem um controle geral do site em si.
+Uma pequena página de atalhos que permitem acesso rapido a várias areas do site. Ela é divida em 3 sessões: 
 
-<a><img src="img_mk/profile_pc.png"></a>
+1) a primeira apresenta conteúdos gerais que todos os usuários tem acesso; 
 
+2) a segunda adiciona utilidades para Produtores que permitem o cadastro de um produto e a visualização de todos os seus produtos cadastrados; 
 
-### 2.6 **Carinho**
-A página onde podem ser vistos todos os produtos cujo o usuário tem intenção de comprar no momento. Ela apresenta a lista dos produtos em questão, seus preços indivíduais, o frete, o preço total, o método de pagamento e o endereço onde tais itens devem ser entregues.
+3) a terceira adiciona utilidades únicas para os usuários que possuem um controle geral do site em si.
 
-<a><img src="img_mk/carrinho.jpg"></a>
+<center><img src="img_mk/profile_pc.png" width="500px" border='1'></center>
 
+### 2.6 **Carrinho**
+Trata-se da página onde podem ser vistos todos os produtos selecionados que o usuário tem intenção de comprar no momento. Ela apresenta a lista dos produtos em questão, seus preços indivíduais, o frete, o preço total, o método de pagamento e o endereço onde tais itens devem ser entregues.
 
-### 2.7 **CRUD de Produto**
-Apresenta a interface de cadastro de um produto exigindo o nome, descrição, preço e quantidade do mesmo. Como mencionado previamente em 2.4 (Lista de Produtos) os Produtores também podem editar o produto nessa tela (Como por exemplo a quantidade disponível) ou simplesmente remove-le, completando a funcionalidade CRUD (Create, Read, Update and Delete).
+<center><img src="img_mk/carrinho.jpg" width="500px" border='1'></center>
 
-<a><img src="img_mk/CRUD_pc.png"></a>
+### 2.7 **Gerenciamento de Produto**
+Trata-se de uma página de acesso restrito em que o administrador e os usuários podem realizar o cadastro de produtos. Nela é apresentada uma interface para coletar o nome, a descrição, o preço e a quantidade do produto. 
+
+Como mencionado anteriormente (em lista de produtos), existirá a possibilidade de editar o produto nessa tela (como, por exemplo, a quantidade e a descrição do produto).
+
+<center><img src="img_mk/CRUD_pc.png" width="500px" border='1'></center>
 
 
 ### 2.8 **Promoção de Consumidor à Produtor**
-Inicialmente não há uma interface específica para essa funcionalidade, sendo imaginado que o Consumidor contataria um Administrador responsável por sua área e o mesmo simplesmente o garantiria as permissões necessárias. Porém, caso necessário, será criada uma seguindo os mesmos padrões encontrados nas outras.
+Inicialmente não existe uma interface específica para essa funcionalidade. A ideia inicial era de que o cliente que estivesse interessado na promoção devesse entrar em contato com o administrador. Porém, caso se mostre necessário, será criada uma página seguindo os mesmos padrões encontrados nas outras páginas.
+
+### 2.9 **Funcionalidade Especial**
+Como funcionalidade especial, pretende-se construir um jogo para que os usuários possam usufruir de entretenimento gratuito. O jogo consiste no pop de alfaces na tela do usuário, o qual deverá clicar nelas para contabilizar pontuação. Caso haja ausência de cliques, ou decurso do tempo, o usuário perde a rodada. Pretende-se criar 3 níveis de dificuldade. Ainda não existe protótipo de apresentação.
 
 
 ## 3. **Comentários Sobre o Código**
