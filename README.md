@@ -112,8 +112,12 @@ Como mencionado anteriormente (em lista de produtos), existirá a possibilidade 
 ### 2.8 **Promoção de Consumidor à Produtor**
 Inicialmente não existe uma interface específica para essa funcionalidade. A ideia inicial era de que o cliente que estivesse interessado na promoção devesse entrar em contato com o administrador. Porém, caso se mostre necessário, será criada uma página seguindo os mesmos padrões encontrados nas outras páginas.
 
-### 2.9 **Funcionalidade Especial**
-Como funcionalidade especial, pretende-se construir um jogo para que os usuários possam usufruir de entretenimento gratuito. O jogo consiste no pop de alfaces na tela do usuário, o qual deverá clicar nelas para contabilizar pontuação. Caso haja ausência de cliques, ou decurso do tempo, o usuário perde a rodada. Pretende-se criar 3 níveis de dificuldade. Ainda não existe protótipo de apresentação.
+### 2.9 **Responsividade e Marcação Semântica**
+Adotou-se como requisito padrão o desenvolvimento de um website marcado pela responsividade, de modo que o usuário do sistema possa acessá-lo a partir de qualquer tipo de tela (celular, desktop, notebook ou smartv). Da mesma forma, utilizou-se TAGS HTML para realizar demarcações semânticas no código.
+
+
+### 2.10 **Funcionalidade Especial**
+Como funcionalidade especial, pretende-se construir um jogo para que os usuários possam usufruir de entretenimento gratuito. Ele irá consistir em uma tela onde haverá o pop de alfaces (em tamanhos e posições variadas). Assim, o usuário deverá clicar nelas para contabilizar uma pontuação. Caso haja ausência de cliques, ou decurso do tempo, o usuário perde a rodada. Pretende-se criar 3 níveis de dificuldade. Ainda não existe protótipo de apresentação e a ideia será amadurecida ao longo da elaboração do site.
 
 
 ## 3. **Comentários Sobre o Código**
