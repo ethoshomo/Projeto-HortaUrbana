@@ -25,16 +25,16 @@ Chamado Horta Urbana o nosso projeto busca agir como uma loja digital com um fil
 
 
 ### 2.1 **Home**
-A primeira página que um indivíduo vê ao acessar o link do site, sua função principal e guiar usuários para as telas de cadastro e/ou login mas também permite o acesso direto do perfil de um usuário caso o mesmo ja esteja logado. Ela está desenvolvida em html e css.
+A primeira página que um indivíduo vê ao acessar o link do site, sua função principal e guiar usuários para as telas de cadastro e/ou login mas também permite o acesso direto do perfil de um usuário caso o mesmo ja esteja logado. Ela está desenvolvida em HTML e CSS.
 <a><img src="img_mk/home_pc.png"></a>
 
 ### 2.2 **Login**
-Essa página primeiro apresenta que o cabeçalho e e rodapé vista na página "Home" será mantida como padrão em todas as outras. Ela apresenta um formulário simples onde são requisitados o e-mail e senha de um usuário ja cadastrado para que ele possa acessar o site em seu perfil. Ela está desenvolvida em html e css.
+Essa página primeiro apresenta que o cabeçalho e e rodapé vista na página "Home" será mantida como padrão em todas as outras. Ela apresenta um formulário simples onde são requisitados o e-mail e senha de um usuário ja cadastrado para que ele possa acessar o site em seu perfil. Ela está desenvolvida em HTML e CSS.
 <a><img src="img_mk/login_pc.png"></a>
 
 
 ### 2.3 **Cadastro**
-Apresenta o formulário de cadastro de um indivíduo, requisitando seu nome, endereço, telefone e informações de login. O endereço pode parecer não intuitivo como uma informação de cadastro porém assume-se que: Um usuário base (Cliente) necessitaria de tal informação para receber seus produtos por entrega, como todos os usuários que vendem produtos (Produtores) também são Clientes essa necessidade se extende a eles. Ela está desenvolvida em html e css.
+Apresenta o formulário de cadastro de um indivíduo, requisitando seu nome, endereço, telefone e informações de login. O endereço pode parecer não intuitivo como uma informação de cadastro porém assume-se que: Um usuário base (Cliente) necessitaria de tal informação para receber seus produtos por entrega, como todos os usuários que vendem produtos (Produtores) também são Clientes essa necessidade se extende a eles. Ela está desenvolvida em HTML e CSS.
 <a><img src="img_mk/cadastro_pc.png"></a>
 
 
