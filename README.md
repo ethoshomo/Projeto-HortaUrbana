@@ -42,7 +42,7 @@ De forma resumida, poderíamos descrever o fluxo da experiência em três frente
 
 <center><img src="img_mk/diagrama.jpeg" width="500px" border='1'></center>
 
-<a href="https://ethoshomo.github.io/Projeto-HortaUrbana/Milestone1/" target="_blank" style="color = 'red'"> Clique aqui para acesssar o protótipo</a>
+<a href="https://ethoshomo.github.io/Projeto-HortaUrbana/Milestone1/" target="_blank"> Clique aqui para acesssar o protótipo</a>
 
 ### 2.1 **Página Home**
 
