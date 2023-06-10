@@ -322,7 +322,7 @@ Abaixo, encontram-se os resultados dos testes mencionados no tópico anterior. E
 
 16. Resultado é parcialmente como esperado, não houve maiores erros de formatação ao manipular as dimensões do site porém foi-se descoberto que não há um limite real para o quão pequena a altura do site pode ser e que, como a imagem a baixo demonstra, existe um ponto de largura do site em que o cabeçalho não esta perfeitamente formatado.
 
-## 6. **Processos de Construção**
+## 6. **Processos de Construção (como executar o site)**
 
 * **Pré-Requisitos**: para executar o site, é necessário ter instalado o Node.js e o NPM. Apesar de apresentar diferenças entre os sistemas operacionais Linux e o Windows, as informações de como realizar a instalação conjunta de ambos podem ser obtidas no site oficial do Node.js (https://nodejs.org/en/download). Nesse contexto, sugere-se a instalação da versão 'LTS'.
 
