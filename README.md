@@ -48,37 +48,37 @@ De forma resumida, poderíamos descrever o fluxo da experiência em três frente
 
 Trata-se da primeira página que o usuário vê ao acessar o domínio do site. Essa página traz um layout composto de três partes: 
 
-1) Header: o cabeçalho é constituído da barra de navegação, onde o usuário poderá fazer acesso à home, a lista de produtos ofertados, à autenticação no sistema e ao carrinho e de compras.
+1) **Header**: o cabeçalho é constituído da barra de navegação, onde o usuário poderá fazer acesso à home, a lista de produtos ofertados, à autenticação no sistema e ao carrinho e de compras.
 
-2) Outlet: trata-se do espaço destinado ao conteúdo do website.
+2) **Outlet**: trata-se do espaço destinado ao conteúdo do website.
 
-3) Footer: trata-se do rodapé da página, onde o usuário poderá consultar informações de contato, políticas de funcionamento e outros.
+3) **Footer**: trata-se do rodapé da página, onde o usuário poderá consultar informações de contato, políticas de funcionamento e outros.
 
 A estrutura apresentada na página home será mantida em todas as demais páginas. Destaque-se que sua principal funcionalidade é receber bem o usuário para que ele possa iniciar uma jornada de compras. 
 
-Nesse contexto, cogitou-se de disponibilizar um login automático no sistema. Porém, haverá necessidade de se estudar a viabilidade de fazer essa funcionalidade. Por enquanto, a página inicial está desenvolvida em HTML e CSS.
+Nesse contexto, é interessante notar que, embora tenha sido feita inicialmente em HTML e CSS, a página atualmente foi convertida para o formato JSX do React.
 
 <center><img src="img_mk/home_pc.png" width="500px" border='1'></center>
 
-### 2.2 **Página de Cadastro de Clientes**
+### 2.2 **Página de Autenticação dos Usuários**
 
-Apresenta o formulário de cadastro. 
+Inicialmente eram duas páginas, as quais foram fundidas em apenas uma que apresenta os formulários de cadastro e de login no sistema. 
 
 Aproveita-se a oportunidade para esclarecer que todos os usuários do website precisarão realizar o cadastro de clientes. Até mesmo os produtores precisam passar por esta etapa. Essa exigência é imposta para que o sistema de compras será preservado. 
 
-Além disso, convém mencionar que são coletados dados como nome, endereço e telefone para que os produtos comprados possam ser entregues, porém também são coletadas informações de login (email e senha). 
+Além disso, convém mencionar que, na página de cadastro, são coletados dados como nome, endereço e telefone para que os produtos comprados possam ser entregues, porém também são coletadas informações adicionais de login (email e senha). 
 
-Por fim, é de se esclarecer que a página está desenvolvida provisoriamente em HTML e CSS, bem como que o formulário ainda não está operacional.
+Por outro lado, a página de login apresenta um formulário simples onde são requisitados o e-mail e senha do usuário previamente cadastrado no sistema. Por meio dessa tela, o administrador, os produtores e os clientes podem acessar seus perfis. 
+
+Ademais, é de se esclarecer que as páginas inicialmente foram desenvolvidas em HTML e CSS, porém foi convertida em formato JSX do React. 
+
+Por fim, é importante mencionar que os formulários estão parcialmente funcionais, pois conseguem interagir com o usuário, embora essa interação ainda seja restrita.
 
 <center><img src="img_mk/cadastro_pc.png" width="500px" border='1'></center>
 
-### 2.3 **Página de Login**
-
-A página de login apresenta um formulário simples onde são requisitados o e-mail e senha de um usuário ja cadastrado. Por meio dessa tela, o administrador, os produtores e os clientes podem acessar seus perfis. Ela está desenvolvida em HTML e CSS.
-
 <center><img src="img_mk/login_pc.png" width="500px" border='1'></center>
 
-### 2.4 **Lista de Produtos**
+### 2.3 **Lista de Produtos**
 Trata-se da página onde é exibida uma lista de produtos que poderão ser pesquisados e accesados. 
 
 Na imagem abaixo, apresenta-se a página sob a perspectiva do administrador o qual pode deletar e editar quaisquer produtos no site. Caso fosse acessada por um produtor, existiria apenas a possibilidade de alteração e deleção dos próprios produtos. Por fim, caso fosse acessada pelo cliente, este seria capaz apenas de visualizar, acessar e comprar produtos.
@@ -86,44 +86,41 @@ Na imagem abaixo, apresenta-se a página sob a perspectiva do administrador o qu
 <center><img src="img_mk/listaprodutos_pc.png" width="500px" border='1'></center>
 
 
-### 2.5 **Profile**
+### 2.4 **Profile**
 Uma pequena página de atalhos que permitem acesso rapido a várias areas do site. Ela é divida em 3 sessões: 
 
 1) a primeira apresenta conteúdos gerais que todos os usuários tem acesso; 
 
-2) a segunda adiciona utilidades para Produtores que permitem o cadastro de um produto e a visualização de todos os seus produtos cadastrados; 
+2) a segunda adiciona utilidades para Produtores que permitem o cadastro de um produto; 
 
 3) a terceira adiciona utilidades únicas para os usuários que possuem um controle geral do site em si.
 
 <center><img src="img_mk/profile_pc.png" width="500px" border='1'></center>
 
-### 2.6 **Carrinho**
-Trata-se da página onde podem ser vistos todos os produtos selecionados que o usuário tem intenção de comprar no momento. Ela apresenta a lista dos produtos em questão, seus preços indivíduais, o frete, o preço total, o método de pagamento e o endereço onde tais itens devem ser entregues.
+### 2.5 **Carrinho**
+Trata-se da página onde podem ser vistos todos os produtos que o usuário tem intenção de comprar no momento. Ela apresenta a lista dos produtos em questão, seus preços indivíduais, o frete, o preço total, o método de pagamento e o endereço onde tais itens devem ser entregues.
 
 <center><img src="img_mk/carrinho.jpg" width="500px" border='1'></center>
 
-### 2.7 **Gerenciamento de Produto**
-Trata-se de uma página de acesso restrito em que o administrador e os usuários podem realizar o cadastro de produtos. Nela é apresentada uma interface para coletar o nome, a descrição, o preço e a quantidade do produto. 
-
-Como mencionado anteriormente (em lista de produtos), existirá a possibilidade de editar o produto nessa tela (como, por exemplo, a quantidade e a descrição do produto).
+### 2.6 **Cadastramento de Produtos**
+Trata-se de uma página de acesso restrito em que o administrador e os usuários podem realizar o cadastro de produtos. Nela é apresentada uma interface para coletar o nome, a descrição, o preço, a imagem e a quantidade do produto. 
 
 <center><img src="img_mk/CRUD_pc.png" width="500px" border='1'></center>
 
 
-### 2.8 **Promoção de Consumidor à Produtor**
-Inicialmente não existe uma interface específica para essa funcionalidade. A ideia inicial era de que o cliente que estivesse interessado na promoção devesse entrar em contato com o administrador. Porém, caso se mostre necessário, será criada uma página seguindo os mesmos padrões encontrados nas outras páginas.
+### 2.8 **Administração de Usuários**
+Embora inicialmente não existisse a intenção de criar uma interface específica para essa funcionalidade, ela foi necessária. Desse modo, a página de administração dos usuários está disponível apenas ao super administrador do sistema. Nesse caso, ele pode promover ou rebaixar usuários ao posto de produtor (com poderes de cadastramento de produtos).
 
 ### 2.9 **Responsividade e Marcação Semântica**
 Adotou-se como requisito padrão o desenvolvimento de um website marcado pela responsividade, de modo que o usuário do sistema possa acessá-lo a partir de qualquer tipo de tela (celular, desktop, notebook ou smartv). Da mesma forma, utilizou-se TAGS HTML para realizar demarcações semânticas no código.
 
-
 ### 2.10 **Funcionalidade Especial**
-Como funcionalidade especial, pretende-se construir um jogo para que os usuários possam usufruir de entretenimento gratuito. Ele irá consistir em um jogo da velha, no qual o usuário podera desfrutar o tipo de jog multiplayer e desafiar as pessoas em seu lado para uma partida. Assim, tendo uma diversão momentânea, o jogo poderá ser jogado por quantas vezes o usuário desejar e após o termino de uma rodada o jogo será reiniciado.
+Como funcionalidade especial, pretende-se construir um jogo para que os usuários possam usufruir de entretenimento gratuito. Ele irá consistir em um jogo da velha (ao qual, na versão final, pretende-se dar a temática de hortas). Por meio dele, o usuário poderá desfrutar de um jogo para desafiar as pessoas uma partida multiplayer. Assim, tendo a diversão momentânea, o jogo poderá ser jogado por quantas vezes o usuário desejar e após o termino de uma rodada o jogo será reiniciado.
 
 
 ## 3. **Comentários Sobre o Código**
 
-O código apresenta uma estrutura clara, limpa e bem organizada, permitindo uma fácil compreensão das suas diferentes partes e funcionalidades. A seguir, será feito brevios comentários e explicações sobre os diretórios mais importantes da árvore de arquivos do código fonte.
+O código apresenta uma estrutura clara, limpa e bem organizada, permitindo uma fácil compreensão das suas diferentes partes e funcionalidades. A seguir, será feito breves comentários e explicações sobre os diretórios mais importantes da árvore de arquivos do código fonte.
 
 <center><img src="img_mk/arvorePastas.png" width="500px" border='1'></center>
 
@@ -131,45 +128,66 @@ O código apresenta uma estrutura clara, limpa e bem organizada, permitindo uma 
 O diretório 'components' foi utilizado para o armazenamento de componentes reutilizáveis dentro da aplicação, que deste modo facilitará a manutenção e o entendimento do código. Em seguida, será apresentado cada um dos componentes desenvolvidos, sendo que dentro dos seus diretórios apresentam os arquivos relacionados à implementação, desenvolvimento e estilização destes componentes:
 
 1. **Buttons**: componentes referente aos botões ao longo da aplicação. 
+
 2. **Card**: card referente a amostragem individual de produto para o usuário dentro da lista de produtos. 
+
 3. **CardCart**: card referente a exibição individual do produto para o usuário dentro do carrinho de compras.
-4. **Courosel**: slides de imagens que será apresentada na página home da aplicação.
-5. **Copyright**: componente que compõe do rodapé do site.
-6. **Error**: interação com o usuário para a exibião de possíveis erros.
+
+4. **Carousel**: slides de imagens que é apresentado na página home da aplicação.
+
+5. **Copyright**: componente que compõe o rodapé do site.
+
+6. **Error**: página de erro exibida quando existe um erro no roteamento ou na exibição de informações. Assim, existirá interação com o usuário para a exibição de possíveis erros.
+
 7. **Footer**: display de informações sobre o site e seus desenvolvedores, assim como informações de contato.
-8. **Form**: formulários de inputs de texto e números utilizados para interagir com usuário para a obtenção de informações necessárias.
-9. **Header**: barra de navegação que o usuário utilizada para trafegar ao longo do site.
+
+8. **Form**: formulários de inputs de texto e de números utilizados para interagir com usuário para a obtenção de informações necessárias.
+
+9. **Header**: barra de navegação que o usuário utiliza para trafegar ao longo do site.
+
 10. **Loading**: exibição de uma imagem de carregamento para as páginas em carregamento.
 
 ### 3.2 **css**
-O diretório 'css' contém os arquivos módulos de CSS em uma aplicação React é onde estão armazenados os estilos CSS específicos de cada componente. Esses arquivos são importados e aplicados diretamente nos componentes, permitindo a estilização individual e modularizada de cada um.
+O diretório 'css' contém os módulos de CSS de cada página. Assim, optou-se por armazenar os estilos CSS específicos de cada componente. Esses arquivos são compilados pelo SASS, juntamente com os componentes do framework Boostrap 5.1, no arquivo style.min.css.
 
 ### 3.2 **database**
-O diretório 'database' simular um banco de dados utilizando arquivos JSX, onde são armazenados os dados da aplicação em forma de vetores de produtos e usuários. Esses arquivos JSX contêm os dados em formato estruturado, permitindo a leitura, escrita e manipulação dos dados como se fosse um banco de dados real.
+O diretório 'database' serve para simular um banco de dados utilizando arquivos javascript, onde são armazenados os dados da aplicação em forma de array de produtos e usuários. Esses arquivos javascript contêm os dados em formato estruturado, permitindo a leitura, escrita e manipulação dos dados como se fosse um banco de dados real.
 
 ### 3.2 **hooks**
-O diretório 'hooks' possui os hooks de contexto e exibições de asserts em uma aplicação React, onde estão localizados os arquivos relacionados à gestão do estado global da aplicação utilizando o Context do React. Além disso, também contém os arquivos responsáveis pela exibição asserts e erros da aplicação.
+O diretório 'hooks' possui os hooks de contexto e exibições de asserts em uma aplicação React, onde estão localizados os arquivos relacionados à gestão do estado global da aplicação utilizando o useContext do React. Além disso, também contém funções úteis, as quais são responsáveis por diversas funcionalidades no site.
 
 ### 3.2 **pages**
-O diretório 'pages' contém os layouts e funcionalidades de páginas em React, onde os arquivos relacionados à aparência e funcionalidade das diferentes páginas da aplicação são armazenados. Esse diretório inclui os arquivos de layout das páginas, os componentes específicos de cada página e a lógica de manipulação de dados necessária para cada visualização da aplicação. Ele centraliza todos os recursos necessários para construir e exibir as páginas da aplicação de forma coerente e consistente. Em seguida, será apresentada de forma suscinta cada uma das pages presente nesse diretório:
+O diretório 'pages' contém o layout e as páginas em React, sendo certo que mencionar que cada subpasta serve para armazenar uma página específica. Além disso, dentro de cada pasta, podemos verificar que a página foi componentizada, de modo que vários arquivos são encontrados. Cada arquivo representa uma única função no contexto específico da página. Em seguida, será apresentada cada uma dessas páginas de forma sucinta:
 
-1. **Auth**: página responsável pela manipulação de autenticação dos usuários, nela possui os forúmlaria de login e cadastro, assim como, a criação dos Context global de login.
-2. **Cart**: página do carrinho de compras do usuário, nela podem ser adicionados itens para a compra e a manipulação de sua quantidade ou remoção.
+1. **Auth**: página responsável pela manipulação de autenticação dos usuários. Nela possui os formulários de login e de cadastro.
+
+2. **Cart**: página do carrinho de compras do usuário. Nela podem ser adicionados itens para a compra e a manipulação de sua quantidade ou remoção.
+
 3. **EditProducts**: página responsável pela alteração dos dados de um produto, caso o produtor ou administrador deseje realizar esta ação.
+
 4. **EditProfile**: página responsável pela alteraçao dos dados do usuário.
+
 5. **Game**: página responável pela criação do jogo da velha e manipulação da sua lógica para o modo multiplayer.
+
 6. **Home**: página inicial do site.
-7. **Layer**: página resposável pelo armazenamento do login do usuário na localstore do browse, para a manutenção dos seus dados.
-8. **Product**: página para visão exclusiva do produto, assim tendo uma visão especializada do produto obtento informações adicionais.
-9. **Products**: página responsável para a exibição dos produtos em forma de cards formando uma lista com todos os produtos presentes no site.
-10. **RegisterProducts**: página responsável pela adição de novos produtos pelo adimistrador.
-11. **Users**: página exclusica do admistrador responsável pela produção ou rebaixamentos de usuários as funções de produtor ou consumidor.
+
+7. **Layer**: página resposável pela estruturação do layout do site, que é dividido em header, outlet e footer. Esse componente ainda verifica se o usuário esteve logado anteriormente (checando o token no localstorage), de modo a prolongar a sessão de login do usuário.
+
+8. **Product**: página para detalhamento do produto. Assim, o usuário tem uma visão especializada do produto obtendo informações adicionais.
+
+9. **Products**: página responsável para a exibição dos produtos em forma de cards, formando uma lista com todos os produtos presentes no site.
+
+10. **RegisterProducts**: página responsável pela adição de novos produtos pelo adimistrador ou pelo produtor.
+
+11. **Users**: página exclusiva do administrador, que é responsável pela promoção ou rebaixamento de usuários.
 
 ### 3.3 **routes**
-O diretório 'routes' é responsável pela criação e manipulação de rotas em React é onde estão localizados os arquivos e componentes relacionados ao gerenciamento de navegação da aplicação. Esse diretório contém os arquivos de configuração das rotas, como a definição de URLs e os componentes correspondentes a cada rota, permitindo a navegação entre diferentes páginas e a exibição dos componentes corretos com base na URL atual.
+O diretório 'routes' é responsável pela criação e manipulação das rotas do front-end em React, ou seja, é onde estão localizados os arquivos e componentes relacionados ao gerenciamento de navegação da aplicação. Esse diretório contém os arquivos de configuração das rotas, como a definição de URLs e os componentes correspondentes a cada rota, permitindo a navegação entre diferentes páginas e a exibição dos componentes corretos com base na URL atual.
 
 ### 3.4 **scss**
+
 O diretório 'scss' é responsável pelo SCSS em React é onde são armazenados os arquivos SCSS relacionados à estilização da aplicação. Esses arquivos contêm estilos avançados, como variáveis, mixins e regras de estilo, que são compilados em CSS para serem aplicados aos componentes React.
+
 
 ## 4. **Plano de Teste**
 
@@ -246,9 +264,9 @@ Abaixo, encontram-se os resultados dos testes mencionados no tópico anterior. E
 
 4. Resultado é parcialmente como esperado, pois, como é visível nas imagens abaixo, não é possivel realizar o cadastro sem informar dados, porém é possível realizar o cadastro do telefone inserindo letras.
     
-    ![Login Teste 4](test4_1.jpg "Login Teste 4")
+    ![Login Teste 4](test/test4_1.jpg "Login Teste 4")
     
-    ![Cadastro Teste 4](test4_2.jpg "Cadastro Teste 4")
+    ![Cadastro Teste 4](test/test4_2.jpg "Cadastro Teste 4")
     
 5. Resultado é como esperado, o Login é realizado sem erros para todos os usuários.
 
@@ -256,17 +274,17 @@ Abaixo, encontram-se os resultados dos testes mencionados no tópico anterior. E
 
 7. Resultado é como esperado, pois, como é visível nas imagens abaixo, não possível realizar uma compra com letras inseridas ou nada inserido na aréa que requisita o número do cartão.
 
-    ![Letra Teste 7](test7_1.jpg "Letra Teste 7")
+    ![Letra Teste 7](test/test7_1.jpg "Letra Teste 7")
     
-    ![Vazio Teste 7](test7_2.jpg "Vazio Teste 7")
+    ![Vazio Teste 7](test/test7_2.jpg "Vazio Teste 7")
     
 8. Resultado é como esperado, com erros antecipados. 
 
     * Como é visível nas imagens abaixo, a imagem selecionada para representar o produto não é carregada e, ao clicar para acessar os detalhes, a tela de loading se apresenta infinitamente.
 
-    ![Teste 8_1](test8_1.jpg "Teste 8_1")
+    ![Teste 8_1](test/test8_1.jpg "Teste 8_1")
     
-    ![Teste 8_2](test8_2.jpg "Teste 8_2")
+    ![Teste 8_2](test/test8_2.jpg "Teste 8_2")
     
     > Observação: esses erros eram esperados, pois todas as informações do site são resgatadas a partir de um arquivo com informações estáticas, mas, por outro lado, todas as alterações de usuários e de produtos são realizadas na memória dinâmica do DOM Virtual (como mencionado na NOTA do tópico 4). Nesse caso, ao tentar resgatar informações, ou elas serão resgatadas de acordo com o conteúdo recuperado no arquivo estático (de forma correta) ou não será possível obter todos os dados (como as imagens supostamente enviadas ao servidor por upload). Nesse contexto, espera-se que esses e outros problemas correlatos sejam resolvidos após a centralização das informações de dados e de imagens no servidor de backend (o que será feito na Milestone 3).
         
@@ -276,25 +294,25 @@ Abaixo, encontram-se os resultados dos testes mencionados no tópico anterior. E
 
     * Como é visível na imagem a baixo não é possível cadastrar um produto sem preencher todas as áreas requisitadas.
 
-    ![Teste 10_1](test10_1.jpg "Teste 10_1")
+    ![Teste 10_1](test/test10_1.jpg "Teste 10_1")
     
     * Porém, na área que requisita o preço do produto é possível escrever um número fracionado por vígurlas enquanto nós tratamos valores não inteiros com ponto. Isso resulta em valores inválidos.
     
-    ![Teste 10_2](test10_2.jpg "Teste 10_2")
+    ![Teste 10_2](test/test10_2.jpg "Teste 10_2")
     
 11. Resultado como esperado, as mudanças do perfil são salvas corretamente.
 
 12. Resultado inesperado, pois, como é visível na imagem abaixo, foi possível editar a cidade para um valor vazio e tornar o telefone em uma lista de letras.
 
-    ![Teste 12_1](test12_1.jpg "Teste 12_1")
+    ![Teste 12_1](test/test12_1.jpg "Teste 12_1")
     
 13. Resultado é como esperado, com erros antecipados.
 
     * O campo do perfil muda para refletir quaisquer promoções e rebaixamentos válidos, como é visível nas imagens abaixo. Também não é possível rebaixar um usuário comum ou promover um usuário que já se encontra na condição de produtor.
     
-    ![Teste 13_1](test13_1.jpg "Teste 13_1")
+    ![Teste 13_1](test/test13_1.jpg "Teste 13_1")
     
-    ![Teste 13_2](test13_2.jpg "Teste 13_2")
+    ![Teste 13_2](test/test13_2.jpg "Teste 13_2")
     
     * Porém, tais mudanças não se mantem após sair da conta do administrador, pois ambos usuários em questão mantém suas posições estáticas. Isso se dá novamente pelo uso de um arquivo de dados estáticos como mencionado na NOTA do tópico anterior, a mudança de estado de usuários, portanto, não é verdadeiramente armazenada.
 
@@ -304,7 +322,24 @@ Abaixo, encontram-se os resultados dos testes mencionados no tópico anterior. E
 
 16. Resultado é parcialmente como esperado, não houve maiores erros de formatação ao manipular as dimensões do site porém foi-se descoberto que não há um limite real para o quão pequena a altura do site pode ser e que, como a imagem a baixo demonstra, existe um ponto de largura do site em que o cabeçalho não esta perfeitamente formatado.
 
-## 6. **Processos de Construção**
+## 6. **Processos de Construção (como executar o site)**
+
+* **Pré-Requisitos**: para executar o site, é necessário ter instalado o Node.js e o NPM. Apesar de apresentar diferenças entre os sistemas operacionais Linux e o Windows, as informações de como realizar a instalação conjunta de ambos podem ser obtidas no site oficial do Node.js (https://nodejs.org/en/download). Nesse contexto, sugere-se a instalação da versão estável da plataforma ('LTS').
+
+* **Executando o Site**: depois de preparado o ambiente do Node.js, é necessário preparar o ambiente de execução do React. Assim, é preciso instalar os pacotes utilizados para o desenvolvimento da aplicação. Isso pode ser feito seguindo os seguintes passos:
+
+    * Fazer o download do repositório do site no endereço do GitHub (https://github.com/ethoshomo/Projeto-HortaUrbana.git) ou fazer o download dos arquivos zipados na pasta 'Download' (arquivo 'Milestone2.zip').
+
+    * Extrair o conteúdo do repositório ou do site em uma pasta no computador local. Sugere-se: HortaUrbana.
+
+    * Entrar no diretório raiz do projeto, ou seja, no diretório Milestone2 (caso se tenha feito o download do repositório completo) ou no diretório criado pelo usuário. Em qualquer caso, é necessário estar no diretório onde sejam encontrados os arquivos 'package.json' e 'package-lock.json'.
+
+    * Executar o comando `npm i` para instalar todos os pacotes necessários à execução do site. Vale afirmar que esse comando irá criar a pasta 'node_modules'. Nesse contexto, sugere-se uma xícara de café, pois o processo é demorado.
+
+    * Depois de finalizada a instalação dos pacotes, é necessário executar o comando `npm start`. Assim, será aberta uma página do navegador com o site em execução. 
+
+Boa navegação!
+
 
 ## 7. **Problemas**
 
