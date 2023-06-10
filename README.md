@@ -123,7 +123,7 @@ Como funcionalidade especial, pretende-se construir um jogo para que os usuário
 
 ## 3. **Comentários Sobre o Código**
 
-O código apresenta uma estrutura clara, limpa e bem organizada, permitindo uma fácil compreensão das suas diferentes partes e funcionalidades. A seguir, será feito brevios comentários e explicações sobre os diretórios mais importantes da árvore de arquivos do código fonte.
+O código apresenta uma estrutura clara, limpa e bem organizada, permitindo uma fácil compreensão das suas diferentes partes e funcionalidades. A seguir, será feito breves comentários e explicações sobre os diretórios mais importantes da árvore de arquivos do código fonte.
 
 <center><img src="img_mk/arvorePastas.png" width="500px" border='1'></center>
 
@@ -131,45 +131,66 @@ O código apresenta uma estrutura clara, limpa e bem organizada, permitindo uma 
 O diretório 'components' foi utilizado para o armazenamento de componentes reutilizáveis dentro da aplicação, que deste modo facilitará a manutenção e o entendimento do código. Em seguida, será apresentado cada um dos componentes desenvolvidos, sendo que dentro dos seus diretórios apresentam os arquivos relacionados à implementação, desenvolvimento e estilização destes componentes:
 
 1. **Buttons**: componentes referente aos botões ao longo da aplicação. 
+
 2. **Card**: card referente a amostragem individual de produto para o usuário dentro da lista de produtos. 
+
 3. **CardCart**: card referente a exibição individual do produto para o usuário dentro do carrinho de compras.
-4. **Courosel**: slides de imagens que será apresentada na página home da aplicação.
-5. **Copyright**: componente que compõe do rodapé do site.
-6. **Error**: interação com o usuário para a exibião de possíveis erros.
+
+4. **Carousel**: slides de imagens que é apresentado na página home da aplicação.
+
+5. **Copyright**: componente que compõe o rodapé do site.
+
+6. **Error**: página de erro exibida quando existe um erro no roteamento ou na exibição de informações. Assim, existirá interação com o usuário para a exibição de possíveis erros.
+
 7. **Footer**: display de informações sobre o site e seus desenvolvedores, assim como informações de contato.
-8. **Form**: formulários de inputs de texto e números utilizados para interagir com usuário para a obtenção de informações necessárias.
-9. **Header**: barra de navegação que o usuário utilizada para trafegar ao longo do site.
+
+8. **Form**: formulários de inputs de texto e de números utilizados para interagir com usuário para a obtenção de informações necessárias.
+
+9. **Header**: barra de navegação que o usuário utiliza para trafegar ao longo do site.
+
 10. **Loading**: exibição de uma imagem de carregamento para as páginas em carregamento.
 
 ### 3.2 **css**
-O diretório 'css' contém os arquivos módulos de CSS em uma aplicação React é onde estão armazenados os estilos CSS específicos de cada componente. Esses arquivos são importados e aplicados diretamente nos componentes, permitindo a estilização individual e modularizada de cada um.
+O diretório 'css' contém os módulos de CSS de cada página. Assim, optou-se por armazenar os estilos CSS específicos de cada componente. Esses arquivos são compilados pelo SASS, juntamente com os componentes do framework Boostrap 5.1, no arquivo style.min.css.
 
 ### 3.2 **database**
-O diretório 'database' simular um banco de dados utilizando arquivos JSX, onde são armazenados os dados da aplicação em forma de vetores de produtos e usuários. Esses arquivos JSX contêm os dados em formato estruturado, permitindo a leitura, escrita e manipulação dos dados como se fosse um banco de dados real.
+O diretório 'database' serve para simular um banco de dados utilizando arquivos javascript, onde são armazenados os dados da aplicação em forma de array de produtos e usuários. Esses arquivos javascript contêm os dados em formato estruturado, permitindo a leitura, escrita e manipulação dos dados como se fosse um banco de dados real.
 
 ### 3.2 **hooks**
-O diretório 'hooks' possui os hooks de contexto e exibições de asserts em uma aplicação React, onde estão localizados os arquivos relacionados à gestão do estado global da aplicação utilizando o Context do React. Além disso, também contém os arquivos responsáveis pela exibição asserts e erros da aplicação.
+O diretório 'hooks' possui os hooks de contexto e exibições de asserts em uma aplicação React, onde estão localizados os arquivos relacionados à gestão do estado global da aplicação utilizando o useContext do React. Além disso, também contém funções úteis, as quais são responsáveis por diversas funcionalidades no site.
 
 ### 3.2 **pages**
-O diretório 'pages' contém os layouts e funcionalidades de páginas em React, onde os arquivos relacionados à aparência e funcionalidade das diferentes páginas da aplicação são armazenados. Esse diretório inclui os arquivos de layout das páginas, os componentes específicos de cada página e a lógica de manipulação de dados necessária para cada visualização da aplicação. Ele centraliza todos os recursos necessários para construir e exibir as páginas da aplicação de forma coerente e consistente. Em seguida, será apresentada de forma suscinta cada uma das pages presente nesse diretório:
+O diretório 'pages' contém o layout e as páginas em React, sendo certo que mencionar que cada subpasta serve para armazenar uma página específica. Além disso, dentro de cada pasta, podemos verificar que a página foi componentizada, de modo que vários arquivos são encontrados. Cada arquivo representa uma única função no contexto específico da página. Em seguida, será apresentada cada uma dessas páginas de forma sucinta:
 
-1. **Auth**: página responsável pela manipulação de autenticação dos usuários, nela possui os forúmlaria de login e cadastro, assim como, a criação dos Context global de login.
-2. **Cart**: página do carrinho de compras do usuário, nela podem ser adicionados itens para a compra e a manipulação de sua quantidade ou remoção.
+1. **Auth**: página responsável pela manipulação de autenticação dos usuários. Nela possui os formulários de login e de cadastro.
+
+2. **Cart**: página do carrinho de compras do usuário. Nela podem ser adicionados itens para a compra e a manipulação de sua quantidade ou remoção.
+
 3. **EditProducts**: página responsável pela alteração dos dados de um produto, caso o produtor ou administrador deseje realizar esta ação.
+
 4. **EditProfile**: página responsável pela alteraçao dos dados do usuário.
+
 5. **Game**: página responável pela criação do jogo da velha e manipulação da sua lógica para o modo multiplayer.
+
 6. **Home**: página inicial do site.
-7. **Layer**: página resposável pelo armazenamento do login do usuário na localstore do browse, para a manutenção dos seus dados.
-8. **Product**: página para visão exclusiva do produto, assim tendo uma visão especializada do produto obtento informações adicionais.
-9. **Products**: página responsável para a exibição dos produtos em forma de cards formando uma lista com todos os produtos presentes no site.
-10. **RegisterProducts**: página responsável pela adição de novos produtos pelo adimistrador.
-11. **Users**: página exclusica do admistrador responsável pela produção ou rebaixamentos de usuários as funções de produtor ou consumidor.
+
+7. **Layer**: página resposável pela estruturação do layout do site, que é dividido em header, outlet e footer. Esse componente ainda verifica se o usuário esteve logado anteriormente (checando o token no localstorage), de modo a prolongar a sessão de login do usuário.
+
+8. **Product**: página para detalhamento do produto. Assim, o usuário tem uma visão especializada do produto obtendo informações adicionais.
+
+9. **Products**: página responsável para a exibição dos produtos em forma de cards, formando uma lista com todos os produtos presentes no site.
+
+10. **RegisterProducts**: página responsável pela adição de novos produtos pelo adimistrador ou pelo produtor.
+
+11. **Users**: página exclusiva do administrador, que é responsável pela promoção ou rebaixamento de usuários.
 
 ### 3.3 **routes**
-O diretório 'routes' é responsável pela criação e manipulação de rotas em React é onde estão localizados os arquivos e componentes relacionados ao gerenciamento de navegação da aplicação. Esse diretório contém os arquivos de configuração das rotas, como a definição de URLs e os componentes correspondentes a cada rota, permitindo a navegação entre diferentes páginas e a exibição dos componentes corretos com base na URL atual.
+O diretório 'routes' é responsável pela criação e manipulação das rotas do front-end em React, ou seja, é onde estão localizados os arquivos e componentes relacionados ao gerenciamento de navegação da aplicação. Esse diretório contém os arquivos de configuração das rotas, como a definição de URLs e os componentes correspondentes a cada rota, permitindo a navegação entre diferentes páginas e a exibição dos componentes corretos com base na URL atual.
 
 ### 3.4 **scss**
+
 O diretório 'scss' é responsável pelo SCSS em React é onde são armazenados os arquivos SCSS relacionados à estilização da aplicação. Esses arquivos contêm estilos avançados, como variáveis, mixins e regras de estilo, que são compilados em CSS para serem aplicados aos componentes React.
+
 
 ## 4. **Plano de Teste**
 
