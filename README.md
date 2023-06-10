@@ -324,9 +324,7 @@ Abaixo, encontram-se os resultados dos testes mencionados no tópico anterior. E
 
 ## 6. **Processos de Construção (como executar o site)**
 
-* **Pré-Requisitos**: para executar o site, é necessário ter instalado o Node.js e o NPM. Apesar de apresentar diferenças entre os sistemas operacionais Linux e o Windows, as informações de como realizar a instalação conjunta de ambos podem ser obtidas no site oficial do Node.js (https://nodejs.org/en/download). 
-
-Nesse contexto, sugere-se a instalação da versão estável da plataforma ('LTS').
+* **Pré-Requisitos**: para executar o site, é necessário ter instalado o Node.js e o NPM. Apesar de apresentar diferenças entre os sistemas operacionais Linux e o Windows, as informações de como realizar a instalação conjunta de ambos podem ser obtidas no site oficial do Node.js (https://nodejs.org/en/download). Nesse contexto, sugere-se a instalação da versão estável da plataforma ('LTS').
 
 * **Executando o Site**: depois de preparado o ambiente do Node.js, é necessário preparar o ambiente de execução do React. Assim, é preciso instalar os pacotes utilizados para o desenvolvimento da aplicação. Isso pode ser feito seguindo os seguintes passos:
 
