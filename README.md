@@ -324,19 +324,21 @@ Abaixo, encontram-se os resultados dos testes mencionados no tópico anterior. E
 
 ## 6. **Processos de Construção (como executar o site)**
 
-* **Pré-Requisitos**: para executar o site, é necessário ter instalado o Node.js e o NPM. Apesar de apresentar diferenças entre os sistemas operacionais Linux e o Windows, as informações de como realizar a instalação conjunta de ambos podem ser obtidas no site oficial do Node.js (https://nodejs.org/en/download). Nesse contexto, sugere-se a instalação da versão 'LTS'.
+* **Pré-Requisitos**: para executar o site, é necessário ter instalado o Node.js e o NPM. Apesar de apresentar diferenças entre os sistemas operacionais Linux e o Windows, as informações de como realizar a instalação conjunta de ambos podem ser obtidas no site oficial do Node.js (https://nodejs.org/en/download). 
 
-* **Executando o Site**: depois de preparado o ambiente com o Node.js, é necessário preparar a execução do React. Assim, é preciso seguir os seguintes passos:
+Nesse contexto, sugere-se a instalação da versão estável da plataforma ('LTS').
 
-* Fazer o download do repositório no endereço do GitHub (https://github.com/ethoshomo/Projeto-HortaUrbana.git) ou fazer o download do site (arquivo 'Milestone2.zip') na pasta 'Download'.
+* **Executando o Site**: depois de preparado o ambiente do Node.js, é necessário preparar o ambiente de execução do React. Assim, é preciso instalar os pacotes utilizados para o desenvolvimento da aplicação. Isso pode ser feito seguindo os seguintes passos:
 
-* Extrair o conteúdo em uma pasta de referência. Sugere-se: HortaUrbana.
+    * Fazer o download do repositório do site no endereço do GitHub (https://github.com/ethoshomo/Projeto-HortaUrbana.git) ou fazer o download dos arquivos zipados na pasta 'Download' (arquivo 'Milestone2.zip').
 
-* Entrar no diretório raiz do site, onde se encontram os arquivos 'package.json' e 'package-lock.json'.
+    * Extrair o conteúdo do repositório ou do site em uma pasta no computador local. Sugere-se: HortaUrbana.
 
-* Executar o comando 'npm i' para instalar todos os pacotes necessários à execução do site. Sugere-se uma xícara de café, pois o processo é demorado.
+    * Entrar no diretório raiz do projeto, ou seja, no diretório Milestone2 (caso se tenha feito o download do repositório completo) ou no diretório criado pelo usuário. Em qualquer caso, é necessário estar no diretório onde sejam encontrados os arquivos 'package.json' e 'package-lock.json'.
 
-* Executar 'npm start' para rodar o frontend do site. Será aberta uma página do navegador com o site em execução. 
+    * Executar o comando `npm i` para instalar todos os pacotes necessários à execução do site. Vale afirmar que esse comando irá criar a pasta 'node_modules'. Nesse contexto, sugere-se uma xícara de café, pois o processo é demorado.
+
+    * Depois de finalizada a instalação dos pacotes, é necessário executar o comando `npm start`. Assim, será aberta uma página do navegador com o site em execução. 
 
 Boa navegação!
 
