@@ -1,0 +1,9 @@
+/******************************************** 
+       REFERENTE AO COMPONENT: COPYRIGHT
+*********************************************/
+.copyright{
+    background-color: var(--darkGreen);
+    text-align: center;
+    color: white;
+    font-weight: 100;
+}

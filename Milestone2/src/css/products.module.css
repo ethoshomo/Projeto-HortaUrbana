@@ -1,0 +1,108 @@
+/******************************************** 
+              PAGE: PRODUCTS
+*********************************************/
+
+
+/******************************************** 
+                  SEARCH
+*********************************************/
+/*search container:
+recebe o search input*/
+.container-search{
+  margin: 0 auto;
+  width: 80%;
+  max-width: 800px;
+}
+
+/* search input */
+.search {
+  margin: 0 auto;
+  width: 60%;
+  max-width: 500px;
+}
+
+/********************************************
+          LISTA DOS CARDS
+*********************************************/
+/*Container que recebe 
+todos os cards*/
+.container-lista-cards{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/********************************************
+              CARDS
+*********************************************/
+/*Container de cada um 
+dos cards*/
+.card-container{
+  width: 250px;
+  margin: 20px 20px;
+}
+
+/*Evento de mouse que amplifica o
+card-container*/
+.card-container:hover {
+  transform: scale(1.08);
+}
+
+/* Zera margin e padding de 
+características do card de produto*/
+img, .card-container figure, .card-container figure figcaption{
+  margin: 0;
+  padding: 0;
+}
+
+/* Título do Produto*/
+.card-title-product {
+  margin-top: 3px;
+  margin-bottom: 0px;
+  padding: 0;
+}
+
+/* Container de Descrição*/
+.card-description{
+  margin: 0 5px;
+  padding: 0;
+  text-align: left;
+}
+
+/* Informações do card*/
+.card-text-info{
+  margin: 5px 5px;
+}
+
+/*pontos da descricao*/
+.card-points {
+  font-weight: 700;
+}
+
+/*rodape da parte principal do card*/
+.card-footer-principal {
+  margin: 0;
+  padding: 0;
+}
+
+/* Rodape de editor (administrador
+ou produtores*/
+.card-footer-editor {
+  margin-bottom: 7px;
+}
+
+/* Configurações do traço do footer*/
+.card-footer-editor hr {
+  margin: 8px 0;
+}
+
+/* Configurações do traço do footer editor*/
+.card-footer-editor p {
+  margin: 0;
+}
+
+/*Configurações dos botões do Card*/
+.card-btn {
+  display: block;
+  margin: 5px 2px;
+}

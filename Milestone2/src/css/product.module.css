@@ -1,0 +1,81 @@
+/******************************************** 
+            PAGE: PRODUCTS
+*********************************************/
+
+/* trata-se do container que recebe
+todo o conteúdo da página (ambas colunas)*/
+.container-product {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+/******************************************** 
+            PRODUCT BOARD
+*********************************************/
+/* Coluna com informações do produtor e do produto*/
+.productBoard{
+    text-align: center;
+    background-color: rgba(191,176,147,0.2);
+    padding: 10px;
+}
+
+/* trata-se do container dentro do product board
+que traz informações do produtor */
+.container-producer{  
+    margin-bottom: 20px;
+}
+
+/* trata-se do título do container de produtor*/
+.product-producer-title{
+    margin: 0;
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* trata-se do campo que exibe o nome do produtor*/
+.producer-info {
+    margin: 5px;
+    text-align: center;
+}
+
+/* título que anuncia os dados de 
+contato do produtor */
+.producer-contact{
+    margin-top: 15px;
+    margin-bottom: 0px;
+    font-size: 0.9em;
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* são exibidos os dados de contato
+do produtor*/
+.producer-info-contact{
+    margin: 0;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+/*container que informa a quantidade 
+de estoque do produto*/
+.product-stock {
+    font-size: 0.85em;
+}
+
+/* container que exibe o preço do produto */
+.product-price {
+    text-align: center;
+    font-size: 2.0em;
+    color: var(--darkOrange);
+}
+
+/******************************************** 
+            PRODUCT
+*********************************************/
+/* Unica modificação feita na porção 
+do produto: descrição */
+.product-description {
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+}

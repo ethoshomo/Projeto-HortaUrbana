@@ -1,0 +1,132 @@
+// Customized
+
+// Overrides desfault variables here
+
+// 3. Include remainder of required Bootstrap stylesheets
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
+// Add additional custom code here
+
+@import 'auth.module.css';
+@import 'products.module.css';
+@import 'header.module.css';
+@import 'copyright.module.css';
+@import 'footer.module.css';
+@import 'formComponents.css';
+@import 'outlet.module.css';
+@import 'cart.module.css';
+@import 'carousel.module.css';
+@import 'editprofile.module.css';
+@import 'users.module.css';
+@import 'product.module.css';
+@import 'game.module.css';
+
+:root {
+  --darkGreen: #0A2100;
+  --lightGreen: #83A603;
+  --lightBrown: #BFB093;
+  --lightOrange: #f27405;
+  --darkOrange: #BF4904;
+  --black: #000000;
+}
+
+@font-face {
+  font-family: 'Russo One';
+  src: local('Russo'), url(../fonts/RussoOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Peddana';
+  src: local('Peddana'), url(../fonts/Peddana-Regular.ttf)
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body {
+  background-color: white;
+  font-family: 'Russo One', 'Verdana';
+  color: var(--darkGreen);
+}
+
+.icon-config {
+  color: white;
+  font-size: 15px;
+}
+
+.notation{
+  font-size: 0.7em;
+}
+
+a {
+  color: var(--darkOrange);
+  text-decoration: none;
+  font-weight: 400;
+}
+
+a:hover {
+  color: var(--lightOrange);
+  font-weight: 400;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.submit {
+  margin: 10px 10px;
+  width: 100px;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: var(--lightOrange);
+  border: 0.03em solid black;
+}
+
+.go-back {
+  margin: 10px 10px;
+  max-width: 200px;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: var(--lightOrange);
+  border: 0.03em solid black;
+}
+
+.remove {
+  display: block;
+  margin: 5px auto;
+  max-width: 80px;
+  margin-top: 8px;
+  font-size: 0.6em;
+}
+
+.img-limitation{
+  max-width: 248px;
+  max-height: 140px;
+}
+
+.img-border-limitation{
+  border-radius: 5px;
+}
+
+.form-floating>.form-control:focus~label,
+.form-floating>.form-control:not(:placeholder-shown)~label,
+.form-floating>.form-select~label {
+  opacity: .45;
+  transform: scale(.85) translateY(-1.0rem) translateX(1.20rem);
+}

@@ -1,0 +1,23 @@
+/********************************************
+              PAGE: AUTH
+*********************************************/
+/*Trata-se do container que recebe
+as tabs de login e cadastro.*/
+.box-login {
+  margin: 0 auto;
+  width: 80%;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+/*Altera as cores dos links nas
+tabs de autenticação */
+.nav .nav-item .nav-link{
+    color: var(--lightOrange);
+}
+
+/*Configurações dentro da tab de
+login e cadastro*/
+.content .tab-content .tab-pane{
+  padding: 15px;
+}

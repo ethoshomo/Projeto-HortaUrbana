@@ -1,0 +1,73 @@
+/********************************************
+            PAGE: CART
+*********************************************/
+
+/* container da página de carrinho */
+.containerCarrinho{
+  margin: 0 auto;
+  width: 80%;
+  min-width: 400px;
+  max-width: 800px;
+}
+
+/* a página de carrinho não tem título,
+mas apenas sutbtítulos: 'Meu carrinho'
+e 'Resumo' */
+.carrinhoSubtitle{
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 15px;
+}
+
+
+/********************************************
+        COLUNA DE QUADRO DE RESUMOS
+*********************************************/
+
+/* personaliza o quadro de resumos*/
+.resumoBoard{
+  background-color: rgba(191,176,147,0.2);
+  padding: 10px;
+  text-align: center;
+}
+
+/* títulos que integram o quadro de
+resumos (Produtos, frete, total, etc)*/ 
+.board-title{
+  font-size: 1.15em;
+  text-align: center;
+  text-decoration: underline;
+}
+
+/* engloba todos os textos do quadro
+de resumos (produtos, total, ...)*/
+.board-text{
+  font-size: 0.80em;
+}
+
+
+/********************************************
+              CARDS DO CARRINHO
+*********************************************/
+
+/* todas as configurações de texto
+do card do carrinho */
+.card-carrinho-text{
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 0.8em;
+  font-weight: 500;
+}
+/* quantidade do carrinho */
+.product-quantity{
+  margin: 0 auto;
+  max-width: 60px;
+}
+
+/* info do card */
+.cart-card-info-product{
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: underline;
+}

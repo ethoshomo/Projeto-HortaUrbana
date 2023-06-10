@@ -1,0 +1,43 @@
+/******************************************** 
+       REFERENTE AO COMPONENT: FOOTER
+*********************************************/
+/*Seleciona todos os h4 dentro de qualquer footer*/
+footer h4{
+  text-decoration: underline;
+}
+
+/* Referente ao footer da página*/
+#rodape{
+  margin: 0;
+  padding: 10px;
+  background-color: var(--lightBrown);
+}
+
+/* personalizações de estilo 
+da tag p dentro do*/
+#rodape p {
+  display: block;
+}
+
+/* personalizações de estilo 
+de link que serão vistas no site*/
+#rodape a{
+  color: rgb(0,0,0);
+  font-weight: 400;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* personalizações de estilo 
+quando do evento mouseover*/
+#rodape a:hover{
+  color: var(--darkOrange);
+  font-weight: 400;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* classe de padronização do tamanho do box*/
+.footer-box{
+  width: 200px;
+}
