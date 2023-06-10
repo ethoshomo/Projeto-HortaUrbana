@@ -28,7 +28,7 @@ function Game() {
 
     // Quando uma casa do tabuleiro é clicada mudamos o seu valor
     window.document.addEventListener('click', (e) => {
-        if (e.target.matches('.house-game') && e.target.textContent == ' ' && !end) {
+        if (e.target.matches('.house-game') && e.target.textContent === ' ' && !end) {
             play(e.target.id)
         }
     })
@@ -119,8 +119,8 @@ function Game() {
         <section id="paginaGame" className="boxContent">
             <h1>Game</h1>
             
-            <p class="p-game">Este é um jogo da velha multiplayer.</p>
-            <p class="p-game">Quando o jogo chegar ao fim, ele será reiciado em 3 segundos e poderá ser jogador quantas vezes quiser.</p>
+            <p className="p-game">Este é um jogo da velha multiplayer.</p>
+            <p className="p-game">Quando o jogo chegar ao fim, ele será reiciado em 3 segundos e poderá ser jogador quantas vezes quiser.</p>
             
             <div className="container">
                 <div id="board">
