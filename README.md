@@ -173,7 +173,136 @@ O diretório 'scss' é responsável pelo SCSS em React é onde são armazenados 
 
 ## 4. **Plano de Teste**
 
+O plano de teste consiste na checagem experimental das diversas características contidas no site de modo que a simular a experiência de um usuário comum. Embora seja um trabalho contínuo, planejamos iniciar a testagem para identificar ao máximo as fontes de erro antes da entrega da Milestone 2, porém essa etapa será continuamente executada durante os testes da Milestone 3.
+
+>NOTA: Devido a implementação do sistema usando um arquivo estático de dados (localizado na pasta *database*) todas as mudanças no site que editam ou adicionam dados se mantém consistentes durante a sessão em que foram realizados. Desse modo, caso haja o recarregamento da página, haverá um reset em todas tais mudanças. Isso é esperado e compreendido.
+
+Abaixo encontra-se uma lista numerada dos diversos testes realizados.
+
+1. _Tentativa de login com um usuário não cadastrado_: ao entrar na página home, clica-se no botão **Autenticação** localizado no header do site. Em seguida, na seção de login, coloca-se valores aleatórios para email e senha, separadamente e em conjunto.
+
+2. _Cadastro de novo usuário_: ao entrar na página home, clica-se no botão **Autenticação** localizado header do site. Em seguida, na seção de cadastro, são inseridos valores válidos. Logo após, clica-se no botão de cadastro.
+
+3. _Tentativa de login com o novo usuário_: com o usuário na página home, e deslogado, clica-se no botão **Autenticação** (header do site) e, em seguida, insere-se os dados de e-mail e senha cadastrados anteriormente no item 2. 
+
+4. _Tentativa de inserção de dados inválidos no processo de login e/ou cadastro_: segue-se o mesmo padrão do item anterior, porém deixa-se de preencher parte dos dados ou preenche-se dados com valores inválidos.
+
+5. _Tentativa de login com usuários já cadastrados_: para fins de testes, foram cadastrados os três usuários que fazem uso do sistema (usuário comum, produtores e o super administrador). Esses três representantes serão usados para verificar a diferença de contexto após realização de login. São eles:
+
+    1. _**Email**_: admin@admin.com - _**Senha**_: 123456 (Super Administrador)
+ 
+    2. _**Email**_: prod@prod.com - _**Senha**_: 123456 (Produtor)
+
+    3. _**Email**_: user@user.com - _**Senha**_: 123456 (Usuário comum)
+
+6. _Tentativa de compra e outras verificações de itens_: os testes foram realizados para os 3 tipos de usuários. A testagem consistiu na verificação de consistência das compras efetuadas pelo usuário. Isto é, quando autenticado no sistema, o usuário se encontra na página **Produtos** (acessível pelo header do site) e existem 3 itens já cadastrados no site, quais sejam: tomate, pepino e alface. Em seguida: 
+
+    1. Clica-se no botão **Comprar** para os três produtos (localizado no card do produto).
+ 
+    2. Clica-se no botão **Carrinho** (localizado no header do site).
+ 
+    3. Na página que se abre, seleciona-se a quantidade de produtos desejados, sendo certo que, para um deles, tenta-se adicionar uma quatidade superior ao possível; para o segundo, tenta-se colocar um quantidade menor que 1; e, para o último, clica-se no botão deletar para retira-lo do carrinho.
+ 
+    4. Insire-se um número qualquer como número de cartão e clica-se no botão para finalizar a compra.
+ 
+    5. Retorna-se à página de produtos para checar se o o número comprado foi reduzido do número de estoque dos produtos.
+
+7. _Tentativa de inserção de dados inválidos no processo de compra_: Tenta-se realizar novamente o ponto 6, porém não inserindo quaisquer valores na área de número de cartão ou tentando digitar letras ou caracteres especiais no mesmo.
+
+8. _Tentativa de cadastro e edição de um novo item_: função válida para Produtores e o Admnistrador. Clica-se no botão **Profile** no cabeçalho, e depois no botão **Cadastrar Produtos**. Escolhe-se um tipo do produto  e preeche-se os dados, incluindo uma imagem local. Em seguida, clica-se no botão de cadastrar o produto. Na sequência, tenta-se editá-lo,clicando no botão **Editar** e mudando a sua descrição e outros atributos.
+
+9. _Tentativa de compra de um novo item_: tenta-se realizar novamente o ponto 6, porém selecionando o novo produto cadastrado no ponto 8.
+
+10. _Tentativa de cadastro de um novo item com dados inválidos_: tenta-se realizar novamente o ponto 8, porém não preenchendo alguns dados na página e tenta-se digitar letras em inputs numéricos e colocar um número em estoque superior a 50 (máximo planejado) ou menor do que 1.
+
+11. _Tentativa de edição de perfil_: função válida para todos os 3 tipos de usuário. Clica-se no botão **Profile** no cabeçalho e depois no botão **Editar Profile**. Edita-se quaisquer informações cadastradas para outros valores válidos e clica-se no botão para salvar as mudanças. Por padrão, o e-mail e a senha não podem ser alterados.
+
+12. _Tentativa de edição de perfil com dados inválidos_: tenta-se realizar novamente o ponto 11, porém deixando certos campos vazios após a edição e inserindo letras no input telefone.
+
+13. _Tentativa de administração de usuários_: função válida apenas para o Administrador. Clica-se no botão **Profile** no cabeçalho e depois no botão **Administrar Usuários**. Uma lista de usuários cadastrados é apresentada, sendo que cada usuário é colocado em um card diferente. Em cada card existem 2 botões, sendo um de promoção a produtor e outro para rebaixar o pordutor a usuário comum. Em seguida:
+
+    1. Clica-se no botão **Promover** para tornar um usuário que não é produtor em um produtor. Observa-se se o campo do perfil muda para refletir a promoção. Adicionalmente é realizado *logout* do conta de Administrador e será feito o *login* na conta que escolheu para promover, momento em que será checado se ela possui a opção de cadastrar produtos no botão **Profile**.
+ 
+    2. Cliqca-se no botão **Rebaixar** para tornar um produtor em um usuário comum. Observa-se se o campo do perfil muda para refletir o rebaixamento. Novamente realiza-se o *logout* e entra-se na conta rebaixada, porém se faz a inspeção para verificar se ela *não* possui a opção de cadastrar produtos.
+ 
+    > Observação: realiza-se a primeira parte do processo 1 em um usuário que já é produtor e do processo 2 em um usuário que não é um.
+
+14. _Tentativa de jogar o minigame do site_: função válida para todos os usuários. Clica-se no botão **Game** no cabeçalho. O jogo é um jogo da velha planejado para dois usuários. Joga-se e tenta-se ganhar com o X. Espera reinicio do jogo. Joga-se para ganhar com o jogador O. Espera-se o reinício do jogo. Repete-se o jogo para obter empate.
+
+15. _Tentativa de utilizar jogadas inválidas no minigame_: repete-se o teste 14, porém são usados artíficios de trapaça clicando novamente em teclas ja marcadas com X ou O e outras tentativas inválidas.
+
+16. _Testes gerais para todas as páginas_: analiza-se se os itens das páginas do site são carregados com sucesso em cada caso, incluindo exibição das imagens, correta apresentação do layout (manipulando-se seu tamanho vertical e horizontal a fim de detectar quaisquer erros de formatação), correto roteamento dos links e outras singularidades de HTML, CSS e JavaScript.
+
+
 ## 5. **Resultados do Teste**
+
+Abaixo, encontram-se os resultados dos testes mencionados no tópico anterior. Esclareça-se que os testes apresentam correlação de números, ou seja, os resultados do teste 1 descrito no item anterior são apresentados no item 1 desta seção.
+
+1. Resultado é como esperado, o login não é realizado.
+
+2. Resultado é como esperado, o cadastro é realizado e a conta tem acesso ao site como um usuário comum.
+
+3. Resultado é como esperado, o login é realizado com sucesso, porém foi detectado um erro inesperado, pois, ao pressionar o botão *Enter* (ao invés de clicar no botão de Login), a página é recarregada ao invés de realizar o Login. Isso ocorreu em todas as instâncias de login e de cadastro.
+
+4. Resultado é parcialmente como esperado, pois, como é visível nas imagens abaixo, não é possivel realizar o cadastro sem informar dados, porém é possível realizar o cadastro do telefone inserindo letras.
+    
+    ![Login Teste 4](test4_1.jpg "Login Teste 4")
+    
+    ![Cadastro Teste 4](test4_2.jpg "Cadastro Teste 4")
+    
+5. Resultado é como esperado, o Login é realizado sem erros para todos os usuários.
+
+6. Resultado é como esperado, a deleção de um item do carrinho não teve problemas. Além disso, não se é permitido comprar mais itens do que é disponível no estoque, nem é possível reduzir o número de um item a menos de 1. Por fim, o estoque decrementou de acordo com os itens comprados.
+
+7. Resultado é como esperado, pois, como é visível nas imagens abaixo, não possível realizar uma compra com letras inseridas ou nada inserido na aréa que requisita o número do cartão.
+
+    ![Letra Teste 7](test7_1.jpg "Letra Teste 7")
+    
+    ![Vazio Teste 7](test7_2.jpg "Vazio Teste 7")
+    
+8. Resultado é como esperado, com erros antecipados. 
+
+    * Como é visível nas imagens abaixo, a imagem selecionada para representar o produto não é carregada e, ao clicar para acessar os detalhes, a tela de loading se apresenta infinitamente.
+
+    ![Teste 8_1](test8_1.jpg "Teste 8_1")
+    
+    ![Teste 8_2](test8_2.jpg "Teste 8_2")
+    
+    > Observação: esses erros eram esperados, pois todas as informações do site são resgatadas a partir de um arquivo com informações estáticas, mas, por outro lado, todas as alterações de usuários e de produtos são realizadas na memória dinâmica do DOM Virtual (como mencionado na NOTA do tópico 4). Nesse caso, ao tentar resgatar informações, ou elas serão resgatadas de acordo com o conteúdo recuperado no arquivo estático (de forma correta) ou não será possível obter todos os dados (como as imagens supostamente enviadas ao servidor por upload). Nesse contexto, espera-se que esses e outros problemas correlatos sejam resolvidos após a centralização das informações de dados e de imagens no servidor de backend (o que será feito na Milestone 3).
+        
+9. Resultado é como esperado, o mesmo que no ponto 6.
+
+10. Resultado é parcialmente como esperado.
+
+    * Como é visível na imagem a baixo não é possível cadastrar um produto sem preencher todas as áreas requisitadas.
+
+    ![Teste 10_1](test10_1.jpg "Teste 10_1")
+    
+    * Porém, na área que requisita o preço do produto é possível escrever um número fracionado por vígurlas enquanto nós tratamos valores não inteiros com ponto. Isso resulta em valores inválidos.
+    
+    ![Teste 10_2](test10_2.jpg "Teste 10_2")
+    
+11. Resultado como esperado, as mudanças do perfil são salvas corretamente.
+
+12. Resultado inesperado, pois, como é visível na imagem abaixo, foi possível editar a cidade para um valor vazio e tornar o telefone em uma lista de letras.
+
+    ![Teste 12_1](test12_1.jpg "Teste 12_1")
+    
+13. Resultado é como esperado, com erros antecipados.
+
+    * O campo do perfil muda para refletir quaisquer promoções e rebaixamentos válidos, como é visível nas imagens abaixo. Também não é possível rebaixar um usuário comum ou promover um usuário que já se encontra na condição de produtor.
+    
+    ![Teste 13_1](test13_1.jpg "Teste 13_1")
+    
+    ![Teste 13_2](test13_2.jpg "Teste 13_2")
+    
+    * Porém, tais mudanças não se mantem após sair da conta do administrador, pois ambos usuários em questão mantém suas posições estáticas. Isso se dá novamente pelo uso de um arquivo de dados estáticos como mencionado na NOTA do tópico anterior, a mudança de estado de usuários, portanto, não é verdadeiramente armazenada.
+
+14. Resultado é como esperado, o jogo pode ser jogado com sucesso sem maiores complicações.
+
+15. Resultado é como esperado, não é possível trapacear clicando novamente em celulasja marcadas.
+
+16. Resultado é parcialmente como esperado, não houve maiores erros de formatação ao manipular as dimensões do site porém foi-se descoberto que não há um limite real para o quão pequena a altura do site pode ser e que, como a imagem a baixo demonstra, existe um ponto de largura do site em que o cabeçalho não esta perfeitamente formatado.
 
 ## 6. **Processos de Construção**
 
