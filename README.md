@@ -318,9 +318,11 @@ Abaixo, encontram-se os resultados dos testes mencionados no tópico anterior. E
 
 14. Resultado é como esperado, o jogo pode ser jogado com sucesso sem maiores complicações.
 
-15. Resultado é como esperado, não é possível trapacear clicando novamente em celulasja marcadas.
+15. Resultado é como esperado, não é possível trapacear clicando novamente em celulas já marcadas.
 
 16. Resultado é parcialmente como esperado, não houve maiores erros de formatação ao manipular as dimensões do site porém foi-se descoberto que não há um limite real para o quão pequena a altura do site pode ser e que, como a imagem a baixo demonstra, existe um ponto de largura do site em que o cabeçalho não esta perfeitamente formatado.
+   
+   ![Teste 16_1](test/test16_1.jpg "Teste 16_1")
 
 ## 6. **Processos de Construção (como executar o site)**
 
