@@ -351,5 +351,7 @@ Boa navegação!
 
 ## 8. **Comentários**
 
-* Não há comentários a serem acrescentados.
+* Conforme foi esclarecido durante a apresentação da Milestone 2, a funcionalidade especial inicialmente projetada não atendia às exigências de envolver o backend. Nesse caso, substituiu-se tal recurso de entretenimento por uma funcionalidade de serviço. Isto é, a nova funcionalidade envolve a finalização de compra, coletando todos os dados e promovendo um resumo dela. Na sequência, ela envia um email ao comprador com todos os dados da compra (produtos e suas respectivas quantidades). Por fim, é de se acrescentar que essa nova funcionalidade estará disponível somente para usuários cadastrados no sistema (com emails verdadeiros e funcionais).
+
+* Fora essa modificação, não há comentários a serem acrescentados.
 
