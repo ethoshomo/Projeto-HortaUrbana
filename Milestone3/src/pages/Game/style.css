@@ -1,0 +1,48 @@
+#container-game {
+    margin: 0 auto;
+    position: absolute;
+}
+
+#board {
+    max-width: 230px;
+    margin: 40px auto 40px auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.p-game {
+    text-align: center;
+}
+
+.house-game {
+    padding: 0;
+    margin: 0;
+    width: 90px;
+    height: 90px;
+    font-size: 50px;
+    text-align: center;
+    border-radius: 4px;
+    background-color: darkslategrey;
+}
+
+.house-game:hover {
+    background-color: var(--lightOrange);
+}
+
+.icon-game {
+    width: 30px;
+    height: 30px;
+    margin: 6px;
+}
+
+#winner-game {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#restart-game {
+    margin: 0 auto;
+    text-align: center;
+}

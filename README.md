@@ -345,5 +345,11 @@ Boa navegação!
 
 ## 7. **Problemas**
 
+* Os problemas encontrados na Milestone 2 e indicados pelas Reviews foram corrigidos para a Milestone 3.
+
+* Além desses problemas não foram encontradas dificuldades significativas. Apenas correções de semântica ou de estilo foram introduzidas. 
+
 ## 8. **Comentários**
+
+* Não há comentários a serem acrescentados.
 

@@ -1,0 +1,24 @@
+/********************************************
+            COMPONENT: OUTLET
+*********************************************/
+
+/* títulos das páginas de outlet */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* containeres das páginas de conteúdo */
+.boxContent{
+  margin: 80px auto;
+  margin-bottom: 30px;
+  width: 90%;
+}
+
+/* conteudos mais específicos */
+.content {
+  margin: 0 auto;
+  padding: 30px;
+  width: 80%;
+  border-radius: 15px;
+}

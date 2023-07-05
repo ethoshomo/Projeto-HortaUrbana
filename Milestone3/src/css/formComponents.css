@@ -1,0 +1,37 @@
+/******************************************** 
+    REFERENTE A COMPONENTES DE FORMULARIO
+*********************************************/
+/* container que recebe o
+formulário de editar produtos*/
+#formProdutos{
+  margin: 0 auto;
+  margin-top: 30px;
+  max-width: 500px;
+}
+
+/*Espaçamento entre nossos produtos
+ e descrição dos produtos*/
+.formProd-produto{
+  margin-bottom: 15px;
+}
+
+/*Espaçamento entre descricao
+ e (preco e stock)*/
+.formProd-description{
+  margin-bottom: 15px;
+}
+
+/* Personaliza todos input de descricão*/
+#inputProductDescricao{
+  height: 100px;
+}
+
+/* Personaliza input da parte de adicionar produto*/
+#inputProdImage, #inputEditProduct{
+  margin-bottom: 20px;
+}
+
+/*Container que recebe o input de quantidade*/
+.formProd-stock{
+  margin-bottom: 10px;
+}

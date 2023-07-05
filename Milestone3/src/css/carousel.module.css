@@ -1,0 +1,9 @@
+/********************************************
+            COMPONENT: CAROUSEL
+*********************************************/
+#carousel {
+    margin: 0 auto;
+    width: 400px;
+    height: 280px;
+    min-width: 400px;
+}

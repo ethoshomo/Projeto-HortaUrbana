@@ -1,0 +1,25 @@
+/******************************************** 
+              PAGE: SOLD
+*********************************************/
+
+/* Box da página*/
+#pageSold{
+    margin: 120px auto;
+    width: 80%;
+    max-width: 800px;
+}
+
+/* Ícone de checked */
+#icon-sold{
+    color: green;
+    font-size: 3em;
+}
+
+/* Quadro de mensagem de vendas */
+.boardSold{
+    background-color: rgba(191,176,147,0.2);
+    margin: 40px auto;
+    width: 70%;
+    padding: 20px;
+    text-align: justify;
+}

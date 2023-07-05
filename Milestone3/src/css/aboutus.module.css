@@ -1,0 +1,9 @@
+/********************************************
+              PAGE: ABOUT US
+*********************************************/
+.aboutus-figure{
+    border-radius: 50%;
+    max-width: 140px;
+    max-height: 140px;
+    margin: 10px;
+}

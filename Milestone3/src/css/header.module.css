@@ -1,0 +1,42 @@
+/********************************************
+              HEADER
+*********************************************/
+/* Barra superior do website*/
+header{
+  width: 100%;
+  margin-top: 0;
+  background-color: var(--darkGreen);
+  background-image: url(../img/fundo.png);
+  background-repeat: no-repeat;
+}
+
+/* Título do site (_HortaUrbana) */
+.title1{
+  position: absolute;
+  top: 0px;
+  left: 100px;
+  font-family: 'Russo One', 'Russo';
+  color: var(--lightOrange);
+  font-size: 2.0rem;
+  z-index: 100;
+}
+
+/* Título do endereço do site (http://) */
+.title2{
+  position: absolute;
+  top: 30px;
+  left: 142px;
+  font-family: 'Peddana';
+  color: white;
+  font-size: 1.4rem;
+  z-index: 50;
+}
+
+/********************************************
+              NAVBAR
+*********************************************/
+/*Define a posição relativa da nav bar*/
+nav{
+  position: relative;
+  text-align: right;
+}

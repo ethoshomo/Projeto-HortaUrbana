@@ -1,0 +1,32 @@
+/********************************************
+              PAGE: USERS
+*********************************************/
+
+/* container que recebe a lista de usuarios*/
+#list-users{
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+/* container do usuário em específico */
+.container-user{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    max-width: 800px;
+    padding: 10px;
+    box-shadow: 1px 1px 20px rgb(194, 194, 194);
+}
+
+/* células do container (células da tabela)*/
+.container-celula{
+    margin: 1px 0;
+    padding: 2px 0;
+}
+
+/*Configurações dos botões
+Promover, Rebaixar e Deletar */
+.btn-config{
+    margin: 0;
+    width:85px;
+}
